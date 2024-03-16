@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header {
+    top: 0px;
+    left: 1px;
+    /* width: 1440px; */
+    align-items: center;
+    height: 102px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  .left{
+    display: flex;
+    align-items: baseline;
+    gap:10px;
+    justify-content: space-between;
+  }
+  .right{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .Logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    line-height: 36px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .text {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .navtext {
+    color: #bbbbbb;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .navbtn1{
+        cursor: pointer;
+        top: 32px;
+        left: 1136px;
+        width: 116px;
+        height: 38px;
+        padding: 0px 8px;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 24px;
+        background-color: #030303;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "Source Sans Pro";
+        line-height: 18px;
+        outline: none;
+  }
+  .navbtn2 {
+    cursor: pointer;
+    top: 32px;
+    left: 1268px;
+    width: 108px;
+    height: 38px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #ff110c;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    line-height: 18px;
+    outline: none;
+  }
