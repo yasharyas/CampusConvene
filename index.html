@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="Css/Style.css">
-    <title>ClubConvene</title>
+    <title>CampusConvene</title>
 </head>
 <body>
     <div class="header">
         <div class="left">
-        <div class="Logo">ClubConvene</div>
+        <div class="Logo">CampusConvene</div>
         <ul>
             <li><div class="navtext">Available Rooms</div></li>
             <li><div class="navtext">Details</div></li>
-            <li><div class="navtext">Book Now</div></li>
         </ul>
         </div>
         <div class="right">
             <ul>
                 <li><button type="button" class="navbtn1">Search</button></li>
-                <li><button type="button" class="navbtn2">View</button></li>
+                <li><button type="button" class="navbtn2">Book Now</button></li>
             </ul>
         </div>
     </div>
@@ -33,7 +32,7 @@
     </div>
     </div>
     <div class="cardcont">
-    <div class="card">
+      <div class="card">
         <div class="first">
           <div class="prim">Search Location</div>
           <div class="sec">Select room </div>
@@ -55,11 +54,13 @@
           <div class="prim">Capacity</div>
           <div class="sec">No. of members</div>
         </div>
-        <div class="button icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56" width="56" height="56" fill="none">
-        <g opacity="100%">
-          <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="0" y="0" width="56" height="56" fill="#ff110c" rx="24"></rect>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="26" height="26" fill="#fff" x="15" y="15">
-            <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+        <div class="button icon">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56" width="56" height="56" fill="none">
+          <g opacity="100%">
+            <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="0" y="0" width="56" height="56" fill="#ff110c" rx="24"></rect>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="26" height="26" fill="#fff" x="15" y="15">
+            <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+            </path>
           </svg>
         </g>
         <defs>
@@ -76,6 +77,53 @@
         </defs>
       </svg></div>
       </div>
+    </div>
+
+    <!-- Available Rooms Section -->
+    <p class="para">Available Rooms for Booking</p><br>
+    <div class="available_rooms">
+      <table class="types-of-rooms" class="table">
+      <tr class="table-row">
+        <div class="column1">
+          <div class="meeting-room">
+            <img src="images\Homepage meeting room.avif" alt="Meeting Room" class="meeting-room-img">
+            <div class="mr-text">Meeting Room</div>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <div class="column2">
+          <div class="lecture-hall">
+            <img src="images/Homepage lecture hall.avif" alt="Lecture Hall" class="lecture-hall-img">
+            <div class="lh-text">Lecture Hall</div>
+          </div>
+          <div class="lab">
+            <img src="images\Homepage lab.avif" alt="Laboratory" class="lab-img">
+            <div class="lab-text">Laboratory</div>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <div class="column3">
+          <div class="study-hall">
+            <img src="images\Homepage study hall.avif" alt="Study Hall" class="study-hall-img">
+            <div class="sh-text">Study Hall</div>
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <div class="column4">
+          <div class="audi">
+            <img src="images\Homepage auditorium.avif" alt="Auditorium" class="audi-img">
+            <div class="audi-text">Auditorium</div>
+          </div>
+          <div class="tut-toom">
+            <img src="images\Homepage tutorial room.avif" alt="Tutorial Room" class="tut-room-img">
+            <div class="tut-text">Tutorial Room</div>
+          </div>
+        </div>
+      </tr>
+      </table>
     </div>
 </body>
 </html>

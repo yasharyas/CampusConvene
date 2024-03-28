@@ -1,20 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .header {
     top: 0px;
     left: 1px;
     align-items: center;
     height: 72px;
-    background-color: #282828;
+    background-color: #313131;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
   }
   .left{
     display: flex;
@@ -31,7 +40,6 @@
   .Logo {
     color: #ffffff;
     font-size: 24px;
-    font-family: "Source Sans Pro";
     font-weight: 600;
     line-height: 36px;
     padding-right: 10px;
@@ -40,14 +48,12 @@
   .text {
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
     font-weight: 300;
     line-height: 22px;
   }
   .navtext {
     color: #bbbbbb;
     font-size: 14px;
-    font-family: "Source Sans Pro";
     font-weight: 300;
     line-height: 22px;
   }
@@ -61,10 +67,9 @@
         border: 0;
         box-sizing: border-box;
         border-radius: 24px;
-        background-color: #030303;
+        background-color: black;
         color: #ffffff;
         font-size: 14px;
-        font-family: "Source Sans Pro";
         line-height: 18px;
         outline: none;
   }
@@ -78,10 +83,9 @@
     border: 0;
     box-sizing: border-box;
     border-radius: 24px;
-    background-color: #ff110c;
+    background-color: red;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
     line-height: 18px;
     outline: none;
   }
@@ -89,6 +93,8 @@
     width: 1312px;
     height: 290px;
     border-radius: 24px;
+    margin-top: 1px;
+    align-items: center;
 }
 .home-main-img-cover{
   width: 1312px;
@@ -144,14 +150,12 @@
 .prim {
   color: #030303;
   font-size: 14px;
-  font-family: "Source Sans Pro";
   font-weight: 500;
   line-height: 22px;
 }
 .sec{
   color: #858585;
   font-size: 14px;
-  font-family: "Source Sans Pro";
   font-weight: 300;
   line-height: 22px;
 }
@@ -183,4 +187,130 @@
   width: 26px;
   height: 26px;
   font-size: 26px;
+}
+
+
+/* Available Rooms for Booking */
+
+.para{
+  margin-left: 105px;
+  margin-right: 120px;
+}
+.available_rooms{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  background-color: white;
+}
+.meeting-room{
+  position: relative;
+}
+.meeting-room-img{
+  width: 325px;
+  height: 400px;
+  border-radius: 24px;
+}
+.mr-text{
+  position: absolute;
+  bottom: -2px;
+  background-color: black;
+  color: white;
+  padding: 2.5px 11px;
+  border-radius: 50px;
+  margin: 18px 18px;
+  font-size: medium;
+}
+.lecture-hall{
+  position: relative;
+}
+.lecture-hall-img{
+  width: 325px;
+  height: 212px;
+  border-radius: 24px;
+  margin-bottom: 8px;
+}
+.lh-text{
+  position: absolute;
+  bottom: 5px;
+  background-color: black;
+  color: white;
+  padding: 2.5px 11px;
+  border-radius: 50px;
+  margin: 18px 18px;
+  font-size: medium;
+}
+.lab{
+  position: relative;
+}
+.lab-img{
+  width: 325px;
+  height: 175px;
+  border-radius: 24px;
+}
+.lab-text{
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 2.5px 11px;
+  border-radius: 50px;
+  margin: 18px 18px;
+  font-size: medium;
+}
+.study-hall{
+  position: relative;
+}
+.study-hall-img{
+  width: 325px;
+  height: 400px;
+  border-radius: 24px;
+}
+.sh-text{
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  padding: 2.5px 11px;
+  border-radius: 50px;
+  margin: 18px 18px;
+  font-size: medium;
+}
+.audi{
+  position: relative;
+}
+.audi-img{
+  width: 325px;
+  height: 175px;
+  border-radius: 24px;
+  margin-bottom: 8px;
+}
+.audi-text{
+  position: absolute;
+  bottom: 8px;
+  background-color: black;
+  color: white;
+  padding: 2.5px 11px;
+  border-radius: 50px;
+  margin: 18px 18px;
+  font-size: medium;
+}
+.tut-room{
+  position: relative;
+}
+.tut-room-img{
+  width: 325px;
+  height: 212px;
+  border-radius: 24px;
+}
+.tut-text{
+  position: absolute;
+  bottom: -157px;
+  background-color: black;
+  color: white;
+  padding: 2.5px 11px;
+  border-radius: 50px;
+  margin: 18px 18px;
+  font-size: medium;
 }
