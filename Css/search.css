@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header {
+    top: 0px;
+    left: 1px;
+    align-items: center;
+    height: 72px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  .left{
+    display: flex;
+    align-items: baseline;
+    gap:10px;
+    justify-content: space-between;
+  }
+  .right {
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px;
+  }  
+  .Logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    line-height: 36px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .text {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .navtext {
+    color: #bbbbbb;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .navbtn1{
+        cursor: pointer;
+        top: 32px;
+        left: 1136px;
+        width: 116px;
+        height: 38px;
+        padding: 0px 8px;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 24px;
+        background-color: #030303;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: "Source Sans Pro";
+        line-height: 18px;
+        outline: none;
+  }
+  .redbtn {
+    cursor: pointer;
+    top: 32px;
+    left: 1268px;
+    width: 108px;
+    height: 38px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #ff110c;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    line-height: 18px;
+    outline: none;
+  }
+  .greybtn {
+    cursor: pointer;
+    top: 32px;
+    left: 1268px;
+    width: 108px;
+    height: 38px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: gray;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    line-height: 18px;
+    outline: none;
+  }
+  .button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    width: 66px;
+    height: 66px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    color: #ffffff;
+    background-color: #ff110c;
+    outline: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 1000px; /* Set your desired height */
+  }
+  
+  .section1 {
+    flex: 2;
+    border: 1px solid black; /* Just for visualization */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section2 {
+    flex: 5;
+    padding: 40px;
+    border: 1px solid black; /* Just for visualization */
+  }
+  
+  .column1{
+    flex:1;
+    padding: 40px;
+    border:1px solid black;
+  }
+
+  .column2{
+    flex:1;
+    padding: 40px;
+    border:1px solid black;
+  }
+  
+  .form-group {
+    margin: 20px;
+  }
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  margin-top: 5px;
+}
+
+/* Styling for icons */
+i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .checkbox-input {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .checkbox-custom:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .checkbox-input:checked + .checkbox-custom:before {
+    background-color: #ff110c; /* Change background color when checked */
+  }
+  
+  .checkbox-input:checked + .checkbox-custom:after {
+    content: "\2714"; /* Unicode checkmark character */
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .room-container {
+    border: 1px solid #282828;
+    border-radius: 24px;
+    display: flex;
+    margin: 20px;
+    margin-left: 0%;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+  }
+  
+  .room-image {
+    flex: 1;
+  }
+  
+  .room-details {
+    flex: 2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .room-details h2 {
+    margin-top: 0;
+  }
+
+  .book-now-btn {
+    margin: 10px; 
+    margin-bottom: 20px;
+    margin-top: auto; /* Pushes the button to the bottom */
+}
+ 
+  #pagination {
+    text-align: center;
+  }
+
+  #pagination button {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  #pagination button.active {
+    background-color: #ff110c;
+    color: white;
+  }
+
+  #pagination button.ellipsis {
+    cursor: default;
+  }
