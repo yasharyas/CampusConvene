@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  .nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #282828;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbtn {
+    cursor: pointer;
+    top: 32px;
+    left: 1268px;
+    width: 108px;
+    height: 40px;
+    padding: 0px 8px;
+    border: 0;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background-color: #ff110c;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    line-height: 18px;
+    outline: none;
+  }
+  .hero{
+    background:#282828;
+    height:150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:24px;
+    font-weight:900;
+    letter-spacing:2px;
+  }
+  .main{
+    
+  }
