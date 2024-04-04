@@ -69,53 +69,7 @@
     fill: rgb(114, 114, 114);
   }
   
-  /* alt button css */
-  /* .button {
-    width: 110px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    background-color: #FF110C;
-    border-radius: 30px;
-    color: rgb(19, 19, 19);
-    font-weight: 600;
-    border: none;
-    position: relative;
-    cursor: pointer;
-    transition-duration: .2s;
-    box-shadow: white;
-    padding-left: 8px;
-    transition-duration: .5s;
-  }
-  
-  .svgIcon {
-    height: 25px;
-    transition-duration: 1.5s;
-  }
-  
-  .bell path {
-    fill: rgb(19, 19, 19);
-  }
-  
-  .button:hover {
-    background-color: red;
-    transition-duration: .5s;
-  }
-  
-  .button:active {
-    transform: scale(0.97);
-    transition-duration: .2s;
-  }
-  
-  .button:hover .svgIcon {
-    transform: rotate(250deg);
-    transition-duration: 1.5s;
-  }
-  
-   */
-  
+   
   /* requestlistings  */
   .reuestdiv {
     height: 500px;
@@ -146,87 +100,6 @@
   
   /* approve reject buttons  */
   
-  /* .ynbtn {
-    position: relative;
-    border: none;
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-    outline-offset: 4px;
-    transition: filter 250ms;
-    user-select: none;
-    touch-action: manipulation;
-  }
-  
-  .shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background: hsl(0deg 0% 0% / 0.25);
-    will-change: transform;
-    transform: translateY(2px);
-    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-  }
-  
-  .edge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background: linear-gradient(
-      to left,
-      hsl(340deg 100% 16%) 0%,
-      hsl(340deg 100% 32%) 8%,
-      hsl(340deg 100% 32%) 92%,
-      hsl(340deg 100% 16%) 100%
-    );
-  }
-  
-  .front {
-    display: block;
-    position: relative;
-    padding: 12px 27px;
-    border-radius: 20px;
-    font-size: 1.1rem;
-    color: white;
-    background: hsl(345deg 100% 47%);
-    will-change: transform;
-    transform: translateY(-4px);
-    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
-  }
-  
-  .ynbtn:hover {
-    filter: brightness(110%);
-  }
-  
-  .ynbtn:hover .front {
-    transform: translateY(-6px);
-    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-  }
-  
-  .ynbtn:active .front {
-    transform: translateY(-2px);
-    transition: transform 34ms;
-  }
-  
-  .ynbtn:hover .shadow {
-    transform: translateY(4px);
-    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
-  }
-  
-  .ynbtn:active .shadow {
-    transform: translateY(1px);
-    transition: transform 34ms;
-  }
-  
-  .ynbtn:focus:not(:focus-visible) {
-    outline: none;
-  } */
   
   .ynbtn {
     cursor: pointer;
