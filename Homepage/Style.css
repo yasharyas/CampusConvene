@@ -382,7 +382,7 @@
   right: 0;
   top: 0;
   transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
   transition: 
     filter 200ms linear,
     transform 200ms linear;
@@ -417,3 +417,87 @@
   line-height: 1.4;
   word-spacing: 100vw;
 } 
+
+
+
+
+/* Footer */
+
+footer {
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-logo {
+  margin-bottom: 10px;
+}
+
+.footer-logo a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-copyright p {
+  margin-left: 10px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+**に変更된 부분**
+.footer-list li {  /* Target the list items */
+  margin-bottom: 10px;  /* Add space between list items */
+}
+
+.footer-list a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-list a:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .footer-left,
+  .footer-right {
+    flex: 100%;
+    text-align: center;
+  }
+}
