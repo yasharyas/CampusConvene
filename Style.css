@@ -506,3 +506,175 @@
 a {
   text-decoration: none;
 }
+
+
+/* calender  */
+
+
+
+/* Import Google font - Poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    background: #9B59B6;
+}
+
+.wrapper {
+    width: 450px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icons span {
+    height: 38px;
+    width: 38px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+    background-color: #9B59B6; 
+} */
+/* margin: 0 5px; Adjust spacing */
+/* background-color: #9B59B6; Arrow background color */
+
+
+/* #8e44ad; Hover color */
+/* .icons span:hover {
+    background: #8e44ad; 
+} */
+/* Text color color: #9B59B6; 
+} */
+/* .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+    color: #9B59B6; 
+} */
+
+/* 
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+} */
+/* padding: 15px 0; Adjust padding */
+/* 
+.calendar .weeks li,
+.calendar .days li {
+    width: calc(100% / 7);
+    padding: 15px 0; Adjust padding
+} */
+/* Text color  #9B59B6*/
+/* .calendar .weeks li {
+    font-weight: bold;
+    color: #9B59B6; 
+} */
+
+/* .calendar .days li {
+    cursor: pointer;
+    position: relative;
+    color: #333;
+} */
+
+/* .days li.inactive {
+    color: #aaa;
+} */
+/* Active day background color #9B59B6 */
+/* .days li.active {
+    color: #fff;
+    background-color: #9B59B6; 
+    border-radius: 50%;
+} */
+/* Hover background color */
+/* .days li:not(.active):hover {
+    background-color: #f2f2f2; 
+} */
+
+/* Styles for styled-select dropdowns */
+/* .styled-select {
+    background-color: #f8f9fa;
+    border: 2px solid #ced4da;
+    color: #495057;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.styled-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.styled-select option {
+    background-color: #f8f9fa;
+    color: #495057; */
+/* } */
+
+/* Add some more styling to make the dropdowns look better */
+/* .wrapper header .user-input {
+    display: flex;
+    align-items: center;
+} */
+
+/* .wrapper header .user-input select {
+    margin-right: 10px;
+    background-color: #f8f9fa;
+    border: 2px solid #ced4da;
+    color: #495057;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.wrapper header .user-input select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} */
+
+/* .wrapper header .user-input button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wrapper header .user-input button:hover {
+    background-color: #0056b3;
+} */
