@@ -250,11 +250,11 @@ i {
     margin-top: auto; /* Pushes the button to the bottom */
 }
  
-  #pagination {
+  .pagination {
     text-align: center;
   }
 
-  #pagination button {
+  .pagination-button {
     border: 1px solid #ccc;
     border-radius: 50%;
     width: 30px;
@@ -264,11 +264,11 @@ i {
     cursor: pointer;
   }
 
-  #pagination button.active {
+  .pagination-button.active {
     background-color: #ff110c;
     color: white;
   }
 
-  #pagination button.ellipsis {
+  .pagination button.ellipsis {
     cursor: default;
   }

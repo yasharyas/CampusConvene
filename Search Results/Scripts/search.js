@@ -4,35 +4,35 @@ const roomArray = [
       "Type": "Lecture Hall",
       "Capacity": "300",
       "Availability": true,
-      "Image": "images/home-main"
+      "Image": "Homepage/images/Homepage auditorium.avif"
   },
   {
     "Venue": "A block",
     "Type": "Tutorial ",
     "Capacity": "50",
     "Availability": false,
-    "Image": "images/home-main"   
+    "Image": "Homepage/images/Homepage lab.avif"   
   },
   {
     "Venue": "B block",
     "Type": "Lecture Hall",
     "Capacity": "250",
     "Availability": true,
-    "Image": "images/home-main"   
+    "Image": "Homepage/images/Homepage auditorium.avif"   
   },
   {
     "Venue": "N block",
     "Type": "Lecture Hall",
     "Capacity": "300",
     "Availability": true,
-    "Image": "images/home-main"   
+    "Image": "Homepage/images/Homepage auditorium.avif"   
   },
   {
     "Venue": "A block",
     "Type": "Tutorial",
     "Capacity": "200",
     "Availability": false,
-    "Image": "images/home-main"   
+    "Image": "Homepage/images/Homepage auditorium.avif"   
   },
   {
     "Venue": "B block",
