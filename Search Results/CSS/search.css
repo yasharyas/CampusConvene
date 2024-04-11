@@ -119,7 +119,7 @@
   .container {
     display: flex;
     flex-direction: row;
-    height: 1000px; /* Set your desired height */
+    height: 900px; /* Set your desired height */
   }
   
   .section1 {
@@ -250,25 +250,17 @@ i {
     margin-top: auto; /* Pushes the button to the bottom */
 }
  
-  .pagination {
-    text-align: center;
-  }
-
   .pagination-button {
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    background-color: white;
-    cursor: pointer;
-  }
-
-  .pagination-button.active {
-    background-color: #ff110c;
+    background-color: #f44336; /* Red color for active page */
     color: white;
-  }
+    border: none;
+    padding: 10px 15px; /* Adjust padding as needed */
+    margin: 0 5px; /* Adjust margin as needed */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+}
 
-  .pagination button.ellipsis {
-    cursor: default;
-  }
+.pagination-button:hover {
+    background-color: #b71c1c; /* Darker red color on hover */
+}
+
