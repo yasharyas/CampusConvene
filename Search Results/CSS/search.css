@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 .header {
     top: 0px;
@@ -263,4 +266,3 @@ i {
 .pagination-button:hover {
     background-color: #b71c1c; /* Darker red color on hover */
 }
-
