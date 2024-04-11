@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClubConvene</title> 
+    
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
@@ -22,6 +23,8 @@
 
   <script src="Scripts/search.js" defer></script>   
   <link rel="stylesheet" href="Css/search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N7/lp5S5w/PVfG71S5a6Y9MGZ3P1KY0QuSbPd76h50tVlZbxRJ6VCYQ+n6lSLn1ZCZOkQwifm5+gtD2i0F3C7w==" crossorigin="anonymous" />
+
 </head>
 <body>
     <!--navbar-->
@@ -34,23 +37,42 @@
             <li><div class="navtext">Book Now</div></li>
         </ul>
         </div>
-        <div class="right">
-            <button type="button" class="redbtn">Login</button>
-        </div>
     </div>
 
     <!--Search-->
     <div class="container">
         <div class="section1">
             <div class="column1">
-                <img src="images/Icon arrow right.png" alt="back arrow" style="height: 40px; width: 40px;"><br>
+              <a href="../index.html" class="arrow-link">
+                <img src="../images/arrow-left-solid.svg" alt="Left Arrow">
+            </a>
+            <br>
+            <br>
                 <h2 style="margin: 10px; margin-bottom: 0px;">Room Search </h2>
                 <form class="form">
-                    <div class="form-group">
-                        Room Location<br>
-                      <input type="text" id="location" placeholder="Location">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
+                  <div class="form-group">
+                    <label for="location">Room Location</label><br>
+                    <select id="location" name="location">
+                        <option value="Any"selected>Any</option>
+                        <option value="A block">A block</option>
+                        <option value="B block">B block</option>
+                        <option value="N block">N block</option>
+                        <option value="P block">P block</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="RoomType">Room Type</label><br>
+                    <select id="RoomType" name="RoomType">
+                        <option value="Any"selected>Any</option>
+                        <option value="Laboratory">Laboratory</option>
+                        <option value="Lecture Hall">Lecture Hall</option>
+                        <option value="Auditorim">Auditorium</option>
+                        <option value="Tutorial Room">Tutorial Room</option>
+                        <option value="GD Room">GD Room</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                  </div>
                     <div class="form-group">
                         Meeting Date<br>
                       <input type="date" id="date" placeholder="Date">
@@ -69,27 +91,7 @@
                   </form>
                 <button onclick="fetchDataFromFirebase()" type="button" style="width: 100%;" class="redbtn search">Search</button>
             </div>
-
-            <div class="column2">
-                <h2 style="margin: 10px; ">Filter Search</h2>
-                <div class="checkbox-container">
-                    <label class="checkbox-label">
-                      <input type="checkbox" class="checkbox-input">
-                      <span class="checkbox-custom"></span>
-                      Checkbox 1
-                    </label><br>
-                    <label class="checkbox-label">
-                      <input type="checkbox" class="checkbox-input">
-                      <span class="checkbox-custom"></span>
-                      Checkbox 2
-                    </label><br>
-                    <label class="checkbox-label">
-                      <input type="checkbox" class="checkbox-input">
-                      <span class="checkbox-custom"></span>
-                      Checkbox 3
-                    </label><br>
-                  </div>
-            </div>
+          
         </div>
 
         <!--display-->
@@ -106,7 +108,29 @@
         </div>
     </div>          
     <!--footer--> 
-
-
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <a href="#">CampusConvene</a>
+          </div>
+          <div class="footer-text">
+            <p>Simplifying room bookings for clubs since 2024</p>
+          </div>
+          <div class="footer-copyright">
+            <p>CampusConvene &copy;<br><p>2024</p></p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <ul class="footer-list">
+            <li><a href="#">Support</a></li><br>
+            <li><a href="#">Help Center</a></li><br>
+            <li><a href="#">Assistance</a></li><br>
+            <li><a href="#">User Manual</a></li><br>
+            <li><a href="#">Get in touch</a></li><br>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
 </body>

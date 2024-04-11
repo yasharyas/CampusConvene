@@ -168,7 +168,7 @@
 
 
 var database = firebase.database();
-var roomsPerPage = 4; // Number of rooms to display per page
+var roomsPerPage = 3; // Number of rooms to display per page
 let currentPage = 1; // Current page number
 
 // Function to generate HTML for each room
@@ -224,29 +224,29 @@ function generatePageNumbers(totalPages) {
   }
 }
 
-// Function to fetch data from Firebase
 function fetchDataFromFirebase() {
   const locationReq = document.getElementById('location').value;
   const membersReq = parseInt(document.getElementById('members').value);
-  //console.log(locationReq , membersReq);
-  var query = firebase.database().ref("Rooms").orderByChild('Venue').equalTo(locationReq);
-  
-  // Execute the query
-  query.once('value', function(snapshot) {
-    var filteredRooms = [];
-    snapshot.forEach(function(childSnapshot) {
-      var roomData = childSnapshot.val();
-      // Filter rooms based on capacity
-      if (roomData.Capacity >= membersReq) {
-        filteredRooms.push(roomData);
-      }
-    });
-    var totalPages = Math.ceil(filteredRooms.length / roomsPerPage);
-    console.log(filteredRooms)
-    displayRooms(filteredRooms);
-    generatePageNumbers(totalPages);
+  const roomTypes = document.getElementById('RoomType').value; // Assuming 'roomType' is the ID of your dropdown menu
+
+  firebase.database().ref("Rooms").once('value', function(snapshot) {
+      var filteredRooms = [];
+      snapshot.forEach(function(childSnapshot) {
+          var roomData = childSnapshot.val();
+          // Check if room matches the selected room type and venue
+          if ((roomTypes === "Any" || roomData.Type === roomTypes) &&
+                (locationReq === "Any" || roomData.Venue === locationReq) &&
+                roomData.Capacity >= membersReq) {
+                filteredRooms.push(roomData);
+            }
+      });
+      var totalPages = Math.ceil(filteredRooms.length / roomsPerPage);
+      console.log(filteredRooms)
+      displayRooms(filteredRooms);
+      generatePageNumbers(totalPages);
   });
 }
+
 
 
 
