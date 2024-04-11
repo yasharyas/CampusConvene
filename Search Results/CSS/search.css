@@ -87,6 +87,9 @@
     line-height: 18px;
     outline: none;
   }
+  .redbtn:active {
+    background-color: #a94c4a; /* New color */
+  }
   .greybtn {
     cursor: pointer;
     top: 32px;
@@ -122,7 +125,7 @@
   .container {
     display: flex;
     flex-direction: row;
-    height: 1000px; /* Set your desired height */
+    height: 900px; /* Set your desired height */
   }
   
   .section1 {

@@ -7,15 +7,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
     <script type="module">
-      // Import the functions you need from the SDKs you need
-
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-    
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-          apiKey: "AIzaSyBXBmwPts_WHvQpWmeln4p9Xz2G7gSl3a8",
+     var firebaseConfig = {
+      apiKey: "AIzaSyBXBmwPts_WHvQpWmeln4p9Xz2G7gSl3a8",
       authDomain: "campusconvene-25346.firebaseapp.com",
       databaseURL: "https://campusconvene-25346-default-rtdb.asia-southeast1.firebasedatabase.app",
       projectId: "campusconvene-25346",
@@ -23,13 +16,11 @@
       messagingSenderId: "46551901845",
       appId: "1:46551901845:web:8dd81381684f10df831d9c",
       measurementId: "G-KHP19GFX7M"
-};
-    
-      firebase.initializeApp(firebaseConfig);
-      
+    };
+    firebase.initializeApp(firebaseConfig);  
   </script>
 
-  <script src="Sripts/search.js" defer></script>   
+  <script src="Scripts/search.js" defer></script>   
   <link rel="stylesheet" href="Css/search.css">
 </head>
 <body>
@@ -48,7 +39,7 @@
         </div>
     </div>
 
-
+    <!--Search-->
     <div class="container">
         <div class="section1">
             <div class="column1">
@@ -76,7 +67,7 @@
                       <i class="fa fa-users"></i>
                     </div>
                   </form>
-                <button type="button" style="width: 100%;" class="redbtn">Find Button</button>
+                <button onclick="fetchDataFromFirebase()" type="button" style="width: 100%;" class="redbtn search">Search</button>
             </div>
 
             <div class="column2">
@@ -101,6 +92,7 @@
             </div>
         </div>
 
+        <!--display-->
         <div class="section2">
             Results For: <br>
             <h2 style="padding: 10px; padding-left: 0%;">Building, Room, Date, Time, And Members</h2>

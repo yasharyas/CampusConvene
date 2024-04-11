@@ -226,19 +226,28 @@ function generatePageNumbers(totalPages) {
 
 // Function to fetch data from Firebase
 function fetchDataFromFirebase() {
-  var dataRef = firebase.database().ref("Rooms");
-  dataRef.once('value', function(snapshot) {
-    var roomArray = [];
+  const locationReq = document.getElementById('location').value;
+  const membersReq = parseInt(document.getElementById('members').value);
+  //console.log(locationReq , membersReq);
+  var query = firebase.database().ref("Rooms").orderByChild('Venue').equalTo(locationReq);
+  
+  // Execute the query
+  query.once('value', function(snapshot) {
+    var filteredRooms = [];
     snapshot.forEach(function(childSnapshot) {
       var roomData = childSnapshot.val();
-      roomArray.push(roomData);
+      // Filter rooms based on capacity
+      if (roomData.Capacity >= membersReq) {
+        filteredRooms.push(roomData);
+      }
     });
-    var totalPages = Math.ceil(roomArray.length / roomsPerPage);
-    displayRooms(roomArray);
+    var totalPages = Math.ceil(filteredRooms.length / roomsPerPage);
+    console.log(filteredRooms)
+    displayRooms(filteredRooms);
     generatePageNumbers(totalPages);
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  fetchDataFromFirebase();
-});
+
+
+
