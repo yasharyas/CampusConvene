@@ -86,3 +86,4 @@
 //   currYear = parseInt(inputYear.value);
 //   renderCalendar();
 // });
+
