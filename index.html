@@ -40,14 +40,15 @@
         <div class="border"></div>
         <div class="secondary">
           <div class="prim">Pick Date</div>
-          <div class="sec">Select Start Date</div>
+          <label class="sec" for="birthday">Select Start Date</label> 
+          <input type="date" id="birthday" name="birthday">
         </div>
         <div class="border">
           
         </div>
         <div class="third">
-          <div class="prim">Pick Date</div>
-          <div class="sec">Select End Date</div>
+          <div class="prim1" inputmode="Date">Pick Date</div>
+          <div class="sec1">Select End Date</div>
         </div>
         <div class="border"></div>
         <div class="fourth">
@@ -197,6 +198,10 @@
   </div>
 </footer>
 
+
+
+<!-- Calendar -->
+
 <!-- <div class="wrapper">
   <header>
       <div class="user-input">
@@ -215,13 +220,13 @@
               <option value="12">December</option>
           </select>
           <select id="input-year">
-              <!-- Populate years from 2024 to 2050 -->
-              <!-- You can modify this range as needed -->
-              <!-- For demonstration purposes, I'm populating it from 2024 to 2050 -->
-              <!-- You can change it to any range you prefer -->
+             Populate years from 2024 to 2050
+              You can modify this range as needed
+              For demonstration purposes, I'm populating it from 2024 to 2050
+              You can change it to any range you prefer
           </select>
       </div>
-      <p class="current-date"></p> <!-- This element will still exist but without text content -->
+      <p class="current-date"></p> This element will still exist but without text content
       <div class="icons">
           <span id="prev" class="material-symbols-rounded">chevron_left</span>
           <span id="next" class="material-symbols-rounded">chevron_right</span>
