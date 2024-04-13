@@ -33,7 +33,7 @@
   .Logo {
     color: #ffffff;
     font-size: 24px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     font-weight: 600;
     line-height: 36px;
     padding-right: 10px;
@@ -42,14 +42,14 @@
   .text {
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     font-weight: 300;
     line-height: 22px;
   }
   .navtext {
     color: #bbbbbb;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     font-weight: 300;
     line-height: 22px;
   }
@@ -66,7 +66,7 @@
         background-color: #030303;
         color: #ffffff;
         font-size: 14px;
-        font-family: "Source Sans Pro";
+        /* font-family: "Source Sans Pro"; */
         line-height: 18px;
         outline: none;
   }
@@ -78,7 +78,8 @@
     height: 34px;
     border-radius: 50%; /* Make it circular */
     overflow: hidden; /* Ensure the image is clipped within the circle */
-    background-color: #ff110c; /* Background color */
+    background-color: red; /* Background color */
+    
 }
 
 .arrow-link img {
@@ -100,7 +101,7 @@
     background-color: #ff110c;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
@@ -120,7 +121,7 @@
     background-color: gray;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
@@ -272,7 +273,7 @@ i {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;  
+  padding: 20px 20px;
 }
 
 .footer-container {
@@ -312,7 +313,7 @@ i {
   align-items: center;
   font-size: 12px;
   position: relative;
-  bottom:2px;
+  bottom: 2px;
   top: 80px;
 }
 
@@ -325,8 +326,10 @@ i {
   margin: 0;
 }
 
-.footer-list li {  /* Target the list items */
-  margin-bottom: 10px;  /* Add space between list items */
+**に変更된 부분** .footer-list li {
+  /* Target the list items */
+  margin-bottom: 10px;
+  /* Add space between list items */
 }
 
 .footer-list a {
@@ -340,12 +343,14 @@ i {
 }
 
 @media (max-width: 768px) {
+
   .footer-left,
   .footer-right {
     flex: 100%;
     text-align: center;
   }
 }
+
 a {
   text-decoration: none;
 }
