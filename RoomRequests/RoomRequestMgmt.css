@@ -33,7 +33,7 @@
     background-color: #ff110c;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
@@ -117,7 +117,7 @@
     background-color: #ff110c;
     color: #ffffff;
     font-size: 14px;
-    font-family: "Source Sans Pro";
+    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
