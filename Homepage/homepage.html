@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="homepage.css">
     <title>CampusConvene</title>
 </head>
 <body>
     <div class="header">
         <div class="left">
         <div class="Logo">CampusConvene</div>
-        <ul>
+        <!-- <ul>
             <li><div class="navtext">Available Rooms</div></li>
             <li><div class="navtext">Details</div></li>
-        </ul>
+        </ul> -->
         </div>
         <div class="right">
             <ul>
-                <li><a href="Search Results\search.html"><button type="button" class="navbtn1">Search </button></a></li>
-                <li><a href="login-page-main\login.html"><button type="button" class="navbtn2">Login</button></a></li>
+                <li><a href="..\Search Results\search.html"><button type="button" class="search-btn">Search </button></a></li>
+                <li><a href="login-page-main\login.html"><button type="button" class="user-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></button></a></li>
             </ul>
         </div>
     </div>
@@ -28,7 +28,7 @@
         <i>148 rooms available for booking now!</i>
     </div>
     <div class="homeMain">
-        <img src="images\home-main.jpg" alt="members of student body cheering" class="home-main-img">
+        <img src="..\images\home-main.jpg" alt="members of student body cheering" class="home-main-img">
     </div>
     </div>
     <div class="cardcont">
@@ -92,7 +92,7 @@
       <tr class="table-row">
         <div class="column1">
           <div class="meeting-room">
-            <img src="images\Homepage meeting room.avif" alt="Meeting Room" class="meeting-room-img">
+            <img src="..\images\Homepage meeting room.avif" alt="Meeting Room" class="meeting-room-img">
             <div class="mr-text">Meeting Room</div>
           </div>
         </div>
@@ -100,11 +100,11 @@
       <tr>
         <div class="column2">
           <div class="lecture-hall">
-            <img src="images/Homepage lecture hall.avif" alt="Lecture Hall" class="lecture-hall-img">
+            <img src="..\images/Homepage lecture hall.avif" alt="Lecture Hall" class="lecture-hall-img">
             <div class="lh-text">Lecture Hall</div>
           </div>
           <div class="lab">
-            <img src="images\Homepage lab.avif" alt="Laboratory" class="lab-img">
+            <img src="..\images\Homepage lab.avif" alt="Laboratory" class="lab-img">
             <div class="lab-text">Laboratory</div>
           </div>
         </div>
@@ -112,7 +112,7 @@
       <tr>
         <div class="column3">
           <div class="study-hall">
-            <img src="images\Homepage study hall.avif" alt="Study Hall" class="study-hall-img">
+            <img src="..\images\Homepage study hall.avif" alt="Study Hall" class="study-hall-img">
             <div class="sh-text">Study Hall</div>
           </div>
         </div>
@@ -120,11 +120,11 @@
       <tr>
         <div class="column4">
           <div class="audi">
-            <img src="images\Homepage auditorium.avif" alt="Auditorium" class="audi-img">
+            <img src="..\images\Homepage auditorium.avif" alt="Auditorium" class="audi-img">
             <div class="audi-text">Auditorium</div>
           </div>
-          <div class="tut-toom">
-            <img src="images\Homepage tutorial room.avif" alt="Tutorial Room" class="tut-room-img">
+          <div class="tut-room">
+            <img src="..\images\Homepage tutorial room.avif" alt="Tutorial Room" class="tut-room-img">
             <div class="tut-text">Tutorial Room</div>
           </div>
         </div>
@@ -201,65 +201,6 @@
 </footer>
 
 
-
-<!-- Calendar -->
-
-<!-- <div class="wrapper">
-  <header>
-      <div class="user-input">
-          <select id="input-month">
-              <option value="1">January</option>
-              <option value="2">February</option>
-              <option value="3">March</option>
-              <option value="4">April</option>
-              <option value="5">May</option>
-              <option value="6">June</option>
-              <option value="7">July</option>
-              <option value="8">August</option>
-              <option value="9">September</option>
-              <option value="10">October</option>
-              <option value="11">November</option>
-              <option value="12">December</option>
-          </select>
-          <select id="input-year">
-             Populate years from 2024 to 2050
-              You can modify this range as needed
-              For demonstration purposes, I'm populating it from 2024 to 2050
-              You can change it to any range you prefer
-          </select>
-      </div>
-      <p class="current-date"></p> This element will still exist but without text content
-      <div class="icons">
-          <span id="prev" class="material-symbols-rounded">chevron_left</span>
-          <span id="next" class="material-symbols-rounded">chevron_right</span>
-      </div>
-  </header>
-  <div class="calendar">
-      <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
-      </ul>
-      <ul class="days"></ul>
-  </div>
-</div>
-
-<script>
-  // Populate years dropdown from 2024 to 2050
-  const yearDropdown = document.getElementById("input-year");
-  for (let year = 2024; year <= 2050; year++) {
-      const option = document.createElement("option");
-      option.value = year;
-      option.textContent = year;
-      yearDropdown.appendChild(option);
-  }
-</script> -->
-
-
-
+<script src="homepage.js"></script>
 </body>
 </html>
