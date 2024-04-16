@@ -49,12 +49,12 @@ ul {
   line-height: 22px;
 }
 
-.navtext {
+/* .navtext {
   color: #bbbbbb;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-}
+} */
 
 /* Search */
 
@@ -125,7 +125,7 @@ ul {
   
   .section1 {
     flex: 2;
-    border: 1px solid black; /* Just for visualization */
+    border-right: 1px black; /* Just for visualization */
     display: flex;
     flex-direction: column;
   }
@@ -133,7 +133,8 @@ ul {
   .section2 {
     flex: 5;
     padding: 34px;
-    border: 1px solid black; /* Just for visualization */
+    border-top: 1px solid black; /* Just for visualization */
+    border-bottom: 1px solid black; /* Just for visualization */
   }
   
   .column1{
