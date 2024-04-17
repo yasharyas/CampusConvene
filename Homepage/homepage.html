@@ -6,6 +6,15 @@
   <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N7/lp5S5w/PVfG71S5a6Y9MGZ3P1KY0QuSbPd76h50tVlZbxRJ6VCYQ+n6lSLn1ZCZOkQwifm5+gtD2i0F3C7w==" crossorigin="anonymous" />
   <title>CampusConvene</title>
+
+  <!-- Include Required Prerequisites -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+ 
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 </head>
 <body>
     <div class="header">
@@ -48,20 +57,22 @@
         </div>
         <div class="border"></div>
         <div class="secondary">
-          <div class="prim">Pick Date</div>
-          <label class="sec">Select Start Date</label>
-          <!-- <label class="sec" for="birthday">Select Start Date</label>  -->
-          <!-- <input type="date" id="birthday" name="birthday"> -->
+          <div class="prim" >Pick Date</div>
+          <label class="sec">
+          <input type="text" name="daterange" value="" style="border: none;"/></label>
+ 
+          <script type="text/javascript">
+          $(function() {
+              $('input[name="daterange"]').daterangepicker({
+                  timePicker: true,
+                  timePickerIncrement: 30
+              });
+          });
+          </script>
         </div>
         <div class="border">
           
         </div>
-        <div class="third">
-          <!-- <div class="prim" inputmode="Date">Pick Date</div> -->
-          <div class="prim">Pick Date</div>
-          <div class="sec">Select End Date</div>
-        </div>
-        <div class="border"></div>
         <div class="fourth">
           <div class="prim">Capacity</div>
           <div class="sec">No. of members</div>
