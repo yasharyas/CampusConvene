@@ -9,17 +9,25 @@
 <body>
     <div class="header">
         <div class="left">
-        <div class="Logo">CampusConvene</div>
-        <!-- <ul>
-            <li><div class="navtext">Available Rooms</div></li>
-            <li><div class="navtext">Details</div></li>
-        </ul> -->
+        <div><img src="../images/CampusConvene Logo.png" class="Logo" alt="Logo"></div>
         </div>
         <div class="right">
-            <ul>
-                <li><a href="..\Search Results\search.html"><button type="button" class="search-btn">Search </button></a></li>
-                <li><a href="login-page-main\login.html"><button type="button" class="user-info"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></button></a></li>
-            </ul>
+          <ul>
+            <li><a href="..\Search Results\search.html"><button type="button" class="search-btn">Search </button></a></li>
+            <li>
+              <div class="dropdown">
+                <button onclick="myFunction()" type="button" class="user-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>
+                  </svg>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="../landing.html">Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
     </div>
     <div class="major"> 
@@ -57,7 +65,7 @@
           <div class="prim">Capacity</div>
           <div class="sec">No. of members</div>
         </div>
-        <div class="button icon" style="margin-top: 5px; margin-right: 10px;"><a href="Search Results\search.html">
+        <div class="button icon" style="margin-top: 5px; margin-right: 10px;"><a href="..\Search Results\search.html">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56" width="56" height="56" fill="none">
           <g opacity="100%">
             <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="0" y="0" width="56" height="56" fill="#ff110c" rx="24"></rect>
