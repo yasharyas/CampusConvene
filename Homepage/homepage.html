@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="homepage.css">
     <title>CampusConvene</title>
+
+    <!-- Include Required Prerequisites -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+ 
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 </head>
 <body>
     <div class="header">
@@ -39,20 +48,22 @@
         </div>
         <div class="border"></div>
         <div class="secondary">
-          <div class="prim">Pick Date</div>
-          <label class="sec">Select Start Date</label>
-          <!-- <label class="sec" for="birthday">Select Start Date</label>  -->
-          <!-- <input type="date" id="birthday" name="birthday"> -->
+          <div class="prim" >Pick Date</div>
+          <label class="sec">
+          <input type="text" name="daterange" value="" style="border: none;"/></label>
+ 
+          <script type="text/javascript">
+          $(function() {
+              $('input[name="daterange"]').daterangepicker({
+                  timePicker: true,
+                  timePickerIncrement: 30
+              });
+          });
+          </script>
         </div>
         <div class="border">
           
         </div>
-        <div class="third">
-          <!-- <div class="prim" inputmode="Date">Pick Date</div> -->
-          <div class="prim">Pick Date</div>
-          <div class="sec">Select End Date</div>
-        </div>
-        <div class="border"></div>
         <div class="fourth">
           <div class="prim">Capacity</div>
           <div class="sec">No. of members</div>
