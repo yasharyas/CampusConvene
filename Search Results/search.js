@@ -168,7 +168,7 @@
 
 
 var database = firebase.database();
-var roomsPerPage = 3; // Number of rooms to display per page
+var roomsPerPage = 10; // Number of rooms to display per page
 let currentPage = 1; // Current page number
 
 // Function to generate HTML for each room

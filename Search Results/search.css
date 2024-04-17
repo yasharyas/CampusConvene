@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* navbar */
@@ -86,12 +86,11 @@ ul {
     background-color: #ff110c;
     color: #ffffff;
     font-size: 14px;
-    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
   .redbtn:active {
-    background-color: #a94c4a; /* New color */
+    background-color: #a94c4a;
   }
   .greybtn {
     cursor: pointer;
@@ -106,7 +105,6 @@ ul {
     background-color: gray;
     color: #ffffff;
     font-size: 14px;
-    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
@@ -310,12 +308,6 @@ i {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-**に変更된 부분** .footer-list li {
-  /* Target the list items */
-  margin-bottom: 10px;
-  /* Add space between list items */
 }
 
 .footer-list a {
