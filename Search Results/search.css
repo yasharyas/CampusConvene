@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* navbar */
@@ -13,7 +13,7 @@
   left: 1px;
   align-items: center;
   height: 72px;
-  background-color: #313131;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   position: sticky;
@@ -33,7 +33,15 @@ ul {
   gap: 10px;
   justify-content: space-between;
 }
+
 .Logo {
+  width: 200px;
+  height: 100%;
+  margin-left: 7px;
+  margin-top: 1px;
+}
+
+/* .Logo {
   color: #ffffff;
   font-size: 24px;
   font-weight: 600;
@@ -47,14 +55,14 @@ ul {
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-}
+} */
 
-.navtext {
+/* .navtext {
   color: #bbbbbb;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
-}
+} */
 
 /* Search */
 
@@ -78,12 +86,11 @@ ul {
     background-color: #ff110c;
     color: #ffffff;
     font-size: 14px;
-    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
   .redbtn:active {
-    background-color: #a94c4a; /* New color */
+    background-color: #a94c4a;
   }
   .greybtn {
     cursor: pointer;
@@ -98,7 +105,6 @@ ul {
     background-color: gray;
     color: #ffffff;
     font-size: 14px;
-    /* font-family: "Source Sans Pro"; */
     line-height: 18px;
     outline: none;
   }
@@ -125,7 +131,7 @@ ul {
   
   .section1 {
     flex: 2;
-    border: 1px solid black; /* Just for visualization */
+    border-right: 1px black; /* Just for visualization */
     display: flex;
     flex-direction: column;
   }
@@ -133,7 +139,8 @@ ul {
   .section2 {
     flex: 5;
     padding: 34px;
-    border: 1px solid black; /* Just for visualization */
+    border-top: 1px solid black; /* Just for visualization */
+    border-bottom: 1px solid black; /* Just for visualization */
   }
   
   .column1{
@@ -301,12 +308,6 @@ i {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-**に変更된 부분** .footer-list li {
-  /* Target the list items */
-  margin-bottom: 10px;
-  /* Add space between list items */
 }
 
 .footer-list a {

@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="Style.css">
-    <title>CampusConvene</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N7/lp5S5w/PVfG71S5a6Y9MGZ3P1KY0QuSbPd76h50tVlZbxRJ6VCYQ+n6lSLn1ZCZOkQwifm5+gtD2i0F3C7w==" crossorigin="anonymous" />
+  <title>CampusConvene</title>
+
+  <!-- Include Required Prerequisites -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+ 
+  <!-- Include Date Range Picker -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 </head>
 <body>
     <div class="header">
         <div class="left">
-        <div class="Logo">CampusConvene</div>
-        <ul>
-            <li><div class="navtext">Available Rooms</div></li>
-            <li><div class="navtext">Details</div></li>
-        </ul>
+        <div><img src="../images/CampusConvene Logo.png" class="Logo" alt="Logo"></div>
         </div>
         <div class="right">
-            <ul>
-                <li><a href="Search Results\search.html"><button type="button" class="navbtn1">Search </button></a></li>
-                <li><a href="login-page-main\login.html"><button type="button" class="navbtn2">Login</button></a></li>
-            </ul>
+          <ul>
+            <li><a href="..\Search Results\search.html"><button type="button" class="search-btn">Search </button></a></li>
+            <li>
+              <div class="dropdown">
+                <button onclick="myFunction()" type="button" class="user-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>
+                  </svg>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  Home
+                  About
+                  <a href="../landing.html">Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
     </div>
     <div class="major"> 
@@ -28,7 +46,7 @@
         <i>148 rooms available for booking now!</i>
     </div>
     <div class="homeMain">
-        <img src="images\home-main.jpg" alt="members of student body cheering" class="home-main-img">
+        <img src="..\images\home-main.jpg" alt="members of student body cheering" class="home-main-img">
     </div>
     </div>
     <div class="cardcont">
@@ -39,25 +57,27 @@
         </div>
         <div class="border"></div>
         <div class="secondary">
-          <div class="prim">Pick Date</div>
-          <label class="sec">Select Start Date</label>
-          <!-- <label class="sec" for="birthday">Select Start Date</label>  -->
-          <!-- <input type="date" id="birthday" name="birthday"> -->
+          <div class="prim" >Pick Date</div>
+          <label class="sec">
+          <input type="text" name="daterange" value="" style="border: none;"/></label>
+ 
+          <script type="text/javascript">
+          $(function() {
+              $('input[name="daterange"]').daterangepicker({
+                  timePicker: true,
+                  timePickerIncrement: 30
+              });
+          });
+          </script>
         </div>
         <div class="border">
           
         </div>
-        <div class="third">
-          <!-- <div class="prim" inputmode="Date">Pick Date</div> -->
-          <div class="prim">Pick Date</div>
-          <div class="sec">Select End Date</div>
-        </div>
-        <div class="border"></div>
         <div class="fourth">
           <div class="prim">Capacity</div>
           <div class="sec">No. of members</div>
         </div>
-        <div class="button icon" style="margin-top: 5px; margin-right: 10px;"><a href="Search Results\search.html">
+        <div class="button icon" style="margin-top: 5px; margin-right: 10px;"><a href="..\Search Results\search.html">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56" width="56" height="56" fill="none">
           <g opacity="100%">
             <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="0" y="0" width="56" height="56" fill="#ff110c" rx="24"></rect>
@@ -92,7 +112,7 @@
       <tr class="table-row">
         <div class="column1">
           <div class="meeting-room">
-            <img src="images\Homepage meeting room.avif" alt="Meeting Room" class="meeting-room-img">
+            <img src="..\images\Homepage meeting room.avif" alt="Meeting Room" class="meeting-room-img">
             <div class="mr-text">Meeting Room</div>
           </div>
         </div>
@@ -100,11 +120,11 @@
       <tr>
         <div class="column2">
           <div class="lecture-hall">
-            <img src="images/Homepage lecture hall.avif" alt="Lecture Hall" class="lecture-hall-img">
+            <img src="..\images/Homepage lecture hall.avif" alt="Lecture Hall" class="lecture-hall-img">
             <div class="lh-text">Lecture Hall</div>
           </div>
           <div class="lab">
-            <img src="images\Homepage lab.avif" alt="Laboratory" class="lab-img">
+            <img src="..\images\Homepage lab.avif" alt="Laboratory" class="lab-img">
             <div class="lab-text">Laboratory</div>
           </div>
         </div>
@@ -112,7 +132,7 @@
       <tr>
         <div class="column3">
           <div class="study-hall">
-            <img src="images\Homepage study hall.avif" alt="Study Hall" class="study-hall-img">
+            <img src="..\images\Homepage study hall.avif" alt="Study Hall" class="study-hall-img">
             <div class="sh-text">Study Hall</div>
           </div>
         </div>
@@ -120,11 +140,11 @@
       <tr>
         <div class="column4">
           <div class="audi">
-            <img src="images\Homepage auditorium.avif" alt="Auditorium" class="audi-img">
+            <img src="..\images\Homepage auditorium.avif" alt="Auditorium" class="audi-img">
             <div class="audi-text">Auditorium</div>
           </div>
-          <div class="tut-toom">
-            <img src="images\Homepage tutorial room.avif" alt="Tutorial Room" class="tut-room-img">
+          <div class="tut-room">
+            <img src="..\images\Homepage tutorial room.avif" alt="Tutorial Room" class="tut-room-img">
             <div class="tut-text">Tutorial Room</div>
           </div>
         </div>
@@ -190,76 +210,17 @@
     </div>
     <div class="footer-right">
       <ul class="footer-list">
-        <li><a href="#">Support</a></li><br>
-        <li><a href="#">Help Center</a></li><br>
-        <li><a href="#">Assistance</a></li><br>
-        <li><a href="#">User Manual</a></li><br>
-        <li><a href="#">Get in touch</a></li><br>
+        <li><a href="../About Us/About-us.html">Support</a></li><br>
+        <li><a href="../About Us/About-us.html">Help Center</a></li><br>
+        <li><a href="../About Us/About-us.html">Assistance</a></li><br>
+        <li><a href="../About Us/About-us.html">User Manual</a></li><br>
+        <li><a href="../About Us/About-us.html">Get in touch</a></li><br>
       </ul>
     </div>
   </div>
 </footer>
 
 
-
-<!-- Calendar -->
-
-<!-- <div class="wrapper">
-  <header>
-      <div class="user-input">
-          <select id="input-month">
-              <option value="1">January</option>
-              <option value="2">February</option>
-              <option value="3">March</option>
-              <option value="4">April</option>
-              <option value="5">May</option>
-              <option value="6">June</option>
-              <option value="7">July</option>
-              <option value="8">August</option>
-              <option value="9">September</option>
-              <option value="10">October</option>
-              <option value="11">November</option>
-              <option value="12">December</option>
-          </select>
-          <select id="input-year">
-             Populate years from 2024 to 2050
-              You can modify this range as needed
-              For demonstration purposes, I'm populating it from 2024 to 2050
-              You can change it to any range you prefer
-          </select>
-      </div>
-      <p class="current-date"></p> This element will still exist but without text content
-      <div class="icons">
-          <span id="prev" class="material-symbols-rounded">chevron_left</span>
-          <span id="next" class="material-symbols-rounded">chevron_right</span>
-      </div>
-  </header>
-  <div class="calendar">
-      <ul class="weeks">
-          <li>Sun</li>
-          <li>Mon</li>
-          <li>Tue</li>
-          <li>Wed</li>
-          <li>Thu</li>
-          <li>Fri</li>
-          <li>Sat</li>
-      </ul>
-      <ul class="days"></ul>
-  </div>
-</div>
-
-<script>
-  // Populate years dropdown from 2024 to 2050
-  const yearDropdown = document.getElementById("input-year");
-  for (let year = 2024; year <= 2050; year++) {
-      const option = document.createElement("option");
-      option.value = year;
-      option.textContent = year;
-      yearDropdown.appendChild(option);
-  }
-</script> -->
-
-
-
+<script src="homepage.js"></script>
 </body>
 </html>

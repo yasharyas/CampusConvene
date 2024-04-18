@@ -2,6 +2,16 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCybmXAUWgGDCMNQWvcRdaMgE31I1GkF8M",
+//   authDomain: "log-in-authentication-ac1b6.firebaseapp.com",
+//   projectId: "log-in-authentication-ac1b6",
+//   storageBucket: "log-in-authentication-ac1b6.appspot.com",
+//   messagingSenderId: "735126972855",
+//   appId: "1:735126972855:web:b26c16bd1de14bf361e032",
+//   measurementId: "G-3GKSESXV7S"
+// };
+
 const firebaseConfig = {
   apiKey: "AIzaSyBXBmwPts_WHvQpWmeln4p9Xz2G7gSl3a8",
   authDomain: "campusconvene-25346.firebaseapp.com",
