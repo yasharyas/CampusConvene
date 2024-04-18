@@ -3,13 +3,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCybmXAUWgGDCMNQWvcRdaMgE31I1GkF8M",
-  authDomain: "log-in-authentication-ac1b6.firebaseapp.com",
-  projectId: "log-in-authentication-ac1b6",
-  storageBucket: "log-in-authentication-ac1b6.appspot.com",
-  messagingSenderId: "735126972855",
-  appId: "1:735126972855:web:b26c16bd1de14bf361e032",
-  measurementId: "G-3GKSESXV7S"
+  apiKey: "AIzaSyBXBmwPts_WHvQpWmeln4p9Xz2G7gSl3a8",
+  authDomain: "campusconvene-25346.firebaseapp.com",
+  databaseURL: "https://campusconvene-25346-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "campusconvene-25346",
+  storageBucket: "campusconvene-25346.appspot.com",
+  messagingSenderId: "46551901845",
+  appId: "1:46551901845:web:8dd81381684f10df831d9c",
+  measurementId: "G-KHP19GFX7M"
 };
 
 const app = initializeApp(firebaseConfig);
