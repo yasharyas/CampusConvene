@@ -85,13 +85,14 @@ submitButton.addEventListener("click", function() {
       const user = userCredential.user;
       console.log("Success! Welcome back!");
       window.alert("Success! Welcome back!");
+      window.location.href = "../Homepage/homepage.html";
       // ...
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log("Error occurred. Try again.");
-      window.alert("Error occurred. Try again.");
+      window.alert("Error occurred. Please enter correct credentials!");
     });
 });
 
