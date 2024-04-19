@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 body {
@@ -14,9 +12,10 @@ body {
 h1 {
   margin-bottom: 8%;
   text-align: center;
-  /* font-family: "Fredoka One", cursive; */
-  color: rgb(251, 12, 12);
-  letter-spacing: 0.1em;
+  font-family: didot;
+  color: red;
+  letter-spacing: 0.05em;
+  font-size: 35px;
 }
 
 p {
@@ -46,10 +45,24 @@ input, button {
   width: 100%;
 }
 
+.Logo {
+  /* width: 10px; */
+  height: auto;
+  align-items: center;
+  /* border-style: outset; */
+  box-shadow: 0 0 10px 0 rgb(178, 178, 178);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: -67px;
+  width: 70%;
+}
+
 .login-container {
+  display: flex;
   background-color: white;
   padding: 7%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   /* horizontal align */
   width: 40vw;
   margin-left: 30vw;
@@ -59,7 +72,7 @@ input, button {
 }
 
 #submit, #create-acct-btn {
-  background-color: rgb(251, 12, 12);
+  background-color: red;
   color: white;
   border: none;
   margin-top: 5%;
@@ -83,7 +96,7 @@ button:hover {
 
 #return-btn {
   background: none;
-  color: grey;
+  color: rgb(79, 79, 79);
   text-decoration: underline;
   border: none;
   margin-top: 3%;
