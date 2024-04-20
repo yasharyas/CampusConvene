@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -9,7 +9,6 @@
 }
 
 .header {
-  top: 0px;
   left: 1px;
   align-items: center;
   height: 72px;
@@ -20,6 +19,7 @@
   top: 0;
   z-index: 3;
 }
+
 /* nav  */
 ul {
   display: flex;
@@ -81,6 +81,7 @@ ul {
   /* line-height: 18px; */
   outline: none;
 }
+
 .user-info:hover, .user-info:focus {
   background-color: rgb(210, 0, 0);
 }
@@ -103,7 +104,7 @@ ul {
   background-color: white;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   right: 0;
   z-index: 1;
 }
@@ -115,9 +116,13 @@ ul {
   display: block;
 }
 
-.dropdown a:hover {background-color: rgb(232, 232, 232);}
+.dropdown a:hover {
+  background-color: rgb(232, 232, 232);
+}
 
-.show {display: block;}
+.show {
+  display: block;
+}
 
 
 
