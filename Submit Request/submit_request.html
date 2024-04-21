@@ -61,8 +61,8 @@
     <!-- Main Content -->
 
     <ol class="breadcrumb-list">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Available rooms</a></li>
+      <li class="breadcrumb-item"><a href="../Homepage/homepage.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="../Search Results/search.html">Available rooms</a></li>
       <li class="breadcrumb-item active">A Block Lecture HAll</li>
     </ol>
 
@@ -87,7 +87,7 @@
       
       <div class="right-main">
         <form id="myForm">
-            <label>Reason for booking the room:</label>
+            <label style="font-size: large;">Reason for booking the room:</label>
             <div class="radio-container">
                 <input type="radio" id="event" name="bookingReason" class="radio-input" value="event">
                 <label for="event" class="radio-label">Event</label>
@@ -97,7 +97,7 @@
                 <label for="meeting" class="radio-label">Team Meeting</label>
             </div>
             
-            <label>Amenities needed:</label>
+            <label style="font-size: large; margin-top: 10px;">Amenities needed:</label>
             <div class="checkbox-container">
                 <input type="checkbox" id="projector" name="amenities" class="checkbox-input" value="projector">
                 <label for="projector" class="checkbox-label">Projector</label>
@@ -120,9 +120,9 @@
                 <input type="text" id="otherAmenity" name="otherAmenity">
             </div>
             
-            <label>Additional notes:</label>
+            <label style="font-size: large; margin-top: 10px;">Additional notes:</label>
             <textarea id="inputText" name="additionalNotes" placeholder="Type something..."></textarea>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="bookRoom()">
         </form>
     </div>
     
