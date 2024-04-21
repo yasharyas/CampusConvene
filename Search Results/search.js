@@ -168,7 +168,7 @@
 
 
 var database = firebase.database();
-var roomsPerPage = 10; // Number of rooms to display per page
+var roomsPerPage = 3; // Number of rooms to display per page
 let currentPage = 1; // Current page number
 
 // Function to generate HTML for each room
@@ -179,7 +179,7 @@ function generateRoomHTML(room) {
 
   return `
       <div class="room-container">
-          <img src="${room.Image}.jpg" style="height: 100%; width:30%; padding: 10px;" alt="Room Image" class="room-image">
+          <img src="../${room.Image}.jpg" style="height: 100%; width:30%; padding: 10px;" alt="Room Image" class="room-image">
           <div class="room-details">
               <h2>${room.Venue}</h2>
               <p>Type: ${room.Type}</p>
@@ -207,6 +207,28 @@ function displayRooms(rooms) {
 }
 
 // Function to generate dynamic page numbers
+function fetchDataFromFirebase() {
+  const locationReq = document.getElementById('location').value;
+  const membersReq = parseInt(document.getElementById('members').value);
+  const roomTypes = document.getElementById('RoomType').value;
+
+  firebase.database().ref("Rooms").once('value', function(snapshot) {
+      var filteredRooms = [];
+      snapshot.forEach(function(childSnapshot) {
+          var roomData = childSnapshot.val();
+          if ((roomTypes === "Any" || roomData.Type === roomTypes) &&
+                (locationReq === "Any" || roomData.Venue === locationReq) &&
+                roomData.Capacity >= membersReq) {
+                filteredRooms.push(roomData);
+            }
+      });
+      var totalPages = Math.ceil(filteredRooms.length / roomsPerPage);
+      displayRooms(filteredRooms); // Pass filtered rooms to display
+      generatePageNumbers(totalPages);
+  });
+}
+
+// Function to generate dynamic page numbers
 function generatePageNumbers(totalPages) {
   var paginationContainer = document.getElementById("pagination-container");
   paginationContainer.innerHTML = "";
@@ -218,35 +240,11 @@ function generatePageNumbers(totalPages) {
       pageLink.className = "pagination-button";
       pageLink.addEventListener("click", function() {
           currentPage = i;
-          displayRooms();
+          fetchDataFromFirebase(); // Fetch data again for the new page
       });
       paginationContainer.appendChild(pageLink);
   }
 }
-
-function fetchDataFromFirebase() {
-  const locationReq = document.getElementById('location').value;
-  const membersReq = parseInt(document.getElementById('members').value);
-  const roomTypes = document.getElementById('RoomType').value; // Assuming 'roomType' is the ID of your dropdown menu
-
-  firebase.database().ref("Rooms").once('value', function(snapshot) {
-      var filteredRooms = [];
-      snapshot.forEach(function(childSnapshot) {
-          var roomData = childSnapshot.val();
-          // Check if room matches the selected room type and venue
-          if ((roomTypes === "Any" || roomData.Type === roomTypes) &&
-                (locationReq === "Any" || roomData.Venue === locationReq) &&
-                roomData.Capacity >= membersReq) {
-                filteredRooms.push(roomData);
-            }
-      });
-      var totalPages = Math.ceil(filteredRooms.length / roomsPerPage);
-      console.log(filteredRooms)
-      displayRooms(filteredRooms);
-      generatePageNumbers(totalPages);
-  });
-}
-
 
 
 
