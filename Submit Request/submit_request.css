@@ -378,3 +378,65 @@ input[type="checkbox"] {
 a {
   text-decoration: none;
 }
+
+.filters {
+  margin-bottom: 20px;
+}
+.filters label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.filters input[type="checkbox"],
+.filters input[type="radio"] {
+  display: none;
+}
+.filters input[type="checkbox"] + label,
+.filters input[type="radio"] + label {
+  cursor: pointer;
+  padding-left: 20px;
+  position: relative;
+  display: block;
+}
+.filters input[type="checkbox"] + label::before,
+.filters input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filters input[type="checkbox"]:checked + label::before,
+.filters input[type="radio"]:checked + label::before {
+  background-color: #007bff;
+}
+.filters input[type="checkbox"] + label::after,
+.filters input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.filters input[type="checkbox"]:checked + label::after,
+.filters input[type="radio"]:checked + label::after {
+  display: block;
+}
+.filters input[type="checkbox"] + label::after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* Styling for sub-options under Confirmation */
+.confirmation-options {
+  margin-left: 20px;
+}
+
+

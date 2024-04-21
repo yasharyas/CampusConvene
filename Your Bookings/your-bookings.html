@@ -88,7 +88,52 @@
     <div class="container">
       <div class="section1">
         <div class="column1">
-          <h2 style="margin: 10px; margin-bottom: 0px">Rooms</h2>
+          <div class="filters">
+            <label>Search:</label></br>
+            <input type="checkbox" id="details" name="details" />
+            <label for="details">Details</label></br>
+            <input type="checkbox" id="list" name="list" />
+            <label for="list">List</label></br>
+            <input type="checkbox" id="scheduled" name="scheduled" />
+            <label for="scheduled">Scheduled</label></br>
+            <input type="checkbox" id="reminder" name="reminder" />
+            <label for="reminder">Reminder</label></br>
+          
+            <label>Confirmation:</label></br>
+            <input type="checkbox" id="upcoming" name="upcoming" />
+            <label for="upcoming">Upcoming</label></br>
+            <input type="checkbox" id="request_approval" name="request_approval" />
+            <label for="request_approval">Request Approval</label></br>
+          
+            <label>Booking Status:</label></br>
+            <input type="radio" id="draft" name="booking_status_options" value="draft" />
+            <label for="draft">Draft</label></br>
+            <input type="radio" id="pending" name="booking_status_options" value="pending" />
+            <label for="draft">Draft</label>
+            <label for="pending">Pending</label></br>
+            <input type="radio" id="open" name="booking_status_options" value="open" />
+            <label for="draft">Draft</label>
+            <label for="open">Open</label></br>
+            <input type="radio" id="closed" name="booking_status_options" value="closed" />
+            <label for="draft">Draft</label>
+            <label for="closed">Closed</label></br>
+          </div>
+          
+
+
+          <script>
+ const confirmationCheckbox = document.getElementById('confirmation');
+  const confirmationOptions = document.querySelectorAll('.confirmation-options');
+  confirmationCheckbox.addEventListener('change', function() {
+    if (this.checked) {
+      confirmationOptions.forEach(option => option.style.display = 'inline-block');
+    } else {
+      confirmationOptions.forEach(option => option.style.display = 'none');
+    }
+  });
+          </script>
+      
+          <!-- <h2 style="margin: 10px; margin-bottom: 0px">Rooms</h2>
           <div class="dropdown">
             Confirmations
             <button id="dropdownButton" style="border: 0; background-color: white;">
@@ -110,7 +155,7 @@
               <a href="#">Option 2</a><br>
               <a href="#">Option 3</a>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
