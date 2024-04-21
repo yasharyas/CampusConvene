@@ -175,7 +175,7 @@ let currentPage = 1; // Current page number
 function generateRoomHTML(room) {
   var availabilityBtnClass = room.Availability ? "redbtn" : "greybtn";
   var availabilityBtnText = room.Availability ? "Available" : "Not Available";
-  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;">Booked</button>';
+  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit()">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;">Booked</button>';
 
   return `
       <div class="room-container">
@@ -189,6 +189,11 @@ function generateRoomHTML(room) {
           </div>
       </div>
   `;
+}
+
+// Function to redirect to submit_request.html
+function redirectToSubmit() {
+  window.location.href = "../Submit Request/submit_request.html";
 }
 
 // Function to display rooms for the current page
@@ -249,3 +254,22 @@ function generatePageNumbers(totalPages) {
 
 
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.user-info')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
