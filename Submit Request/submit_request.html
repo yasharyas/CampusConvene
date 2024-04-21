@@ -51,30 +51,132 @@
       </div>
     </div>
 
+
+
+
+
+
+
+
     <!-- Main Content -->
 
-    <p class="heading">Mention your reason to proceed!</p>
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Available rooms</a></li>
+      <li class="breadcrumb-item active">A Block Lecture HAll</li>
+    </ol>
+
     <div class="container">
       <div class="left-main">
-        <img
-          src="../images/Homepage lecture hall.avif"
-          alt="Your selected room"
-          class="selected-room-img"
-        />
-        <div class="room-desc">
-          <h1 class="name">A Block</h1>
-          <p class="description">Lecture Hall</p>
-          <p class="description">200 Capacity</p>
+        <div class="highlight-img">
+      </div>
+
+        <div class="desc">
+
+          <ul class="room-desc">
+            <li><h1 class="name">A Block</h1></li>
+            <li><p class="description">Lecture Hall</p></li>
+          </ul>
+          <ul class="room-desc2">
+            <li><p class="description">Maximum-Capacity: 235</p></li>
+          </ul>
+
+        
         </div>
       </div>
+      
       <div class="right-main">
-        <input
-          type="text"
-          placeholder="Mention the reason"
-          class="reason-box"><br>
-        <button type="submit" class="submit">Submit!</button>
-      </div>
+        <form id="myForm">
+            <label>Reason for booking the room:</label>
+            <div class="radio-container">
+                <input type="radio" id="event" name="bookingReason" class="radio-input" value="event">
+                <label for="event" class="radio-label">Event</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="meeting" name="bookingReason" class="radio-input" value="meeting">
+                <label for="meeting" class="radio-label">Team Meeting</label>
+            </div>
+            
+            <label>Amenities needed:</label>
+            <div class="checkbox-container">
+                <input type="checkbox" id="projector" name="amenities" class="checkbox-input" value="projector">
+                <label for="projector" class="checkbox-label">Projector</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="mic" name="amenities" class="checkbox-input" value="mic">
+                <label for="mic" class="checkbox-label">Microphone</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="speaker" name="amenities" class="checkbox-input" value="speaker">
+                <label for="speaker" class="checkbox-label">Speaker</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="others" name="amenities" class="checkbox-input" value="others">
+                <label for="others" class="checkbox-label">Others</label>
+            </div>
+            
+            <div class="text-input-container">
+                <label for="otherAmenity">If others, please specify:</label>
+                <input type="text" id="otherAmenity" name="otherAmenity">
+            </div>
+            
+            <label>Additional notes:</label>
+            <textarea id="inputText" name="additionalNotes" placeholder="Type something..."></textarea>
+            <input type="submit" value="Submit">
+        </form>
     </div>
+    
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+    
+            var inputText = document.getElementById("inputText").value;
+            var bookingReason = document.querySelector('input[name="bookingReason"]:checked').value;
+            var amenities = [];
+            var checkboxes = document.querySelectorAll('input[name="amenities"]:checked');
+            checkboxes.forEach(function(checkbox) {
+                amenities.push(checkbox.value);
+            });
+            
+            var otherAmenity = "";
+            if (document.getElementById("others").checked) {
+                otherAmenity = document.getElementById("otherAmenity").value;
+            }
+            
+            console.log("Reason for booking: " + bookingReason);
+            console.log("Amenities needed: " + amenities.join(', '));
+            console.log("Other amenity: " + otherAmenity);
+            console.log("Additional notes: " + inputText);
+            
+            // You can further process the inputText, bookingReason, amenities, and otherAmenity as needed
+        });
+        
+        document.getElementById("others").addEventListener("change", function() {
+            var textInputContainer = document.querySelector('.text-input-container');
+            if (this.checked) {
+                textInputContainer.style.display = "block";
+            } else {
+                textInputContainer.style.display = "none";
+            }
+        });
+    </script>
+      
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Footer -->
 
