@@ -17,3 +17,8 @@ function myFunction() {
       }
     }
   }
+
+  function bookRoom() {
+    alert("Your room is successfully booked.");
+    window.location.href = "../Homepage/homepage.html";
+}
