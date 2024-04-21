@@ -273,7 +273,7 @@ i {
 }
  
   .pagination-button {
-    background-color: #f44336; /* Red color for active page */
+    background-color: red; /* Red color for active page */
     color: white;
     border: none;
     padding: 10px 15px; /* Adjust padding as needed */
