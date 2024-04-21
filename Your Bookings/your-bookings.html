@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="your-bookings.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -51,42 +53,118 @@
       </div>
     </div>
 
+    <!--Main Content-->
+    <!-- <div class="container">
+      <div class="left-main">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-calendar-check-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"
+              /></svg
+            >Confirmation
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Upcoming</a>
+            <a href="#">Request Approval</a>
+            <a href="#">Booking Status</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-main">
+        Results For: <br />
+        <h2 style="padding: 10px; padding-left: 0%">Your Bookings</h2>
+      </div>
+    </div> -->
+
+    <!--Search-->
+    <div class="container">
+      <div class="section1">
+        <div class="column1">
+          <h2 style="margin: 10px; margin-bottom: 0px">Rooms</h2>
+          <div class="dropdown">
+            Confirmations
+            <button id="dropdownButton" style="border: 0; background-color: white;">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-down-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                />
+              </svg>
+            </button>
+            <div id="dropdownMenu" style="display: none">
+              <a href="#">Option 1</a><br>
+              <a href="#">Option 2</a><br>
+              <a href="#">Option 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--display-->
+      <div class="section2">
+        <h2 style="padding: 10px; padding-left: 0%">
+          Your Bookings:
+        </h2>
+
+        <div id="room-list-container">
+          <div id=" data-display"></div>
+          <div id="room-list"></div>
+          <div id="dataDisplay"></div>
+          <div id="pagination-container"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
 
     <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-left">
-            <div class="footer-logo">
-              <a href="#">CampusConvene</a>
-            </div>
-            <div class="footer-text">
-              <p>Simplifying room bookings for clubs since 2024</p>
-            </div>
-            <div class="footer-copyright">
-              <p>
-                CampusConvene &copy;<br />
-                2024
-              </p>
-            </div>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <a href="#">CampusConvene</a>
           </div>
-          <div class="footer-right">
-            <ul class="footer-list">
-              <li><a href="../About Us/About-us.html">Support</a></li>
-              <br />
-              <li><a href="../About Us/About-us.html">Help Center</a></li>
-              <br />
-              <li><a href="../About Us/About-us.html">Assistance</a></li>
-              <br />
-              <li><a href="../About Us/About-us.html">User Manual</a></li>
-              <br />
-              <li><a href="../About Us/About-us.html">Get in touch</a></li>
-              <br />
-            </ul>
+          <div class="footer-text">
+            <p>Simplifying room bookings for clubs since 2024</p>
+          </div>
+          <div class="footer-copyright">
+            <p>
+              CampusConvene &copy;<br />
+              2024
+            </p>
           </div>
         </div>
-      </footer>
-  
-      <script src="your-bookings.js"></script>
-    </body>
-  </html>
-  
+        <div class="footer-right">
+          <ul class="footer-list">
+            <li><a href="../About Us/About-us.html">Support</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">Help Center</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">Assistance</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">User Manual</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">Get in touch</a></li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="your-bookings.js"></script>
+  </body>
+</html>
