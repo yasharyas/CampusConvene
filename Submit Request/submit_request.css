@@ -102,15 +102,54 @@ ul {
   display: block;
 }
 
+
+
+
+
+
+
+
+
 /* Main Content */
 
-.heading {
-  font-size: x-large;
-  margin: 14px auto 14px 50px;
-  color: rgb(255, 82, 82);
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  margin: 1rem 0 0 0;
+  list-style: none;
+}
+.breadcrumb-list a{
+  text-decoration: none;
+  color:orangered
+}
+.breadcrumb-list li {
+  font-size: 0.85rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+.breadcrumb-item.active {
+  color: #333;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  display: inline-block;
+  padding: 0 0.5rem;
+  color: #d5d5d5;
+}
+
+.highlight-img{
+  
+  margin-left:40px;
+  height: 50vh;
+  background-image: url("../images/Homepage lecture hall.avif");
+  background-size:cover;
+  background-position:center;
 }
 
 .container {
+  margin-top:20px ;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -128,35 +167,134 @@ ul {
   border-radius: 4px;
   margin: 30px 50px 7px 50px;
 }
-
-.room-desc{
-  margin-left: 175px;
+.desc{
+  padding-left: 40px;
+  padding-top:2%;
 }
-
+.room-desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between  ;
+}
+.room-desc2{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between  ;
+}
+.name{
+  font-size: 30px;
+  font-weight: 700;
+  
+}
 .right-main {
   width: 150%;
+  text-align: center;
 }
 
-.reason-box {
-  width: 75%;
-  height: auto;
-  box-sizing: border-box;
-  margin: 30px 60px 20px 100px;
-  border: 1px solid rgb(255, 69, 69);
-  padding: 125px 50px 125px 50px;
+form {
+  display: inline-block;
+  text-align: left;
 }
-
-.submit{
-  background-color: red;
-  color: white;
+textarea {
+  width: 50%;
+  height: 200px;
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Prevent resizing of textarea */
+}
+input[type="submit"], input[type="radio"], input[type="checkbox"], input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: orangered;
+  color: #fff;
   border: none;
-  padding: 10px 15px;
-  margin:  5px auto 10px 375px;
-  border-radius: 30px;
+  border-radius: 5px;
   cursor: pointer;
-  width: 130px;
-
 }
+input[type="submit"]:hover {
+  background-color: rgb(255, 60, 0);
+}
+/* Styling for radio buttons */
+input[type="radio"] {
+  display: none; /* Hide the default radio buttons */
+}
+.radio-container {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+.radio-label {
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.radio-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.radio-input:checked + .radio-label:before {
+  background-color: orangered;
+  border-color: orangered;
+}
+/* Styling for checkboxes */
+input[type="checkbox"] {
+  display: none; /* Hide the default checkboxes */
+}
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+.checkbox-label {
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.checkbox-label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.checkbox-input:checked + .checkbox-label:before {
+  background-color: orangered;
+  border-color: orangered;
+}
+/* Styling for text input */
+.text-input-container {
+  display: none;
+  margin-top: 10px;
+}
+
+
 
 /* Footer */
 
