@@ -254,31 +254,31 @@ function displayRooms(rooms) {
 }
 
 // Function to generate HTML for each room
-function generateRoomHTML(room) {
-  var availabilityBtnClass = room.Availability ? "redbtn" : "greybtn";
-  var availabilityBtnText = room.Availability ? "Available" : "Not Available";
-  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit()">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;" disabled>Booked</button>';
+// function generateRoomHTML(room) {
+//   var availabilityBtnClass = room.Availability ? "redbtn" : "greybtn";
+//   var availabilityBtnText = room.Availability ? "Available" : "Not Available";
+//   var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit()">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;" disabled>Booked</button>';
   
-  var redirectOnClick = room.Availability ? 'window.location.href = "../Submit Request/submit_request.html";' : '';
+//   var redirectOnClick = room.Availability ? 'window.location.href = "../Submit Request/submit_request.html";' : '';
 
-  return `
-      <div class="room-container">
-          <img src="../${room.Image}.jpg" style="height: 100%; width:30%; padding: 10px;" alt="Room Image" class="room-image">
-          <div class="room-details">
-              <h2>${room.Venue}</h2>
-              <p>Type: ${room.Type}</p>
-              <p>Capacity: ${room.Capacity}</p>
-              <button class="${availabilityBtnClass}" style="width: 30%; margin: 10px; margin-left: 0%;" onclick="${redirectOnClick}">${availabilityBtnText}</button>
-              ${bookNowBtnHTML}
-          </div>
-      </div>
-  `;
-}
-// Define the redirectToSubmit function
-function redirectToSubmit() {
-  // Redirect the user to the submit page
-  window.location.href = "../Submit Request/submit_request.html"; // Adjust the path accordingly
-}
+//   return `
+//       <div class="room-container">
+//           <img src="../${room.Image}.jpg" style="height: 100%; width:30%; padding: 10px;" alt="Room Image" class="room-image">
+//           <div class="room-details">
+//               <h2>${room.Venue}</h2>
+//               <p>Type: ${room.Type}</p>
+//               <p>Capacity: ${room.Capacity}</p>
+//               <button class="${availabilityBtnClass}" style="width: 30%; margin: 10px; margin-left: 0%;" onclick="${redirectOnClick}">${availabilityBtnText}</button>
+//               ${bookNowBtnHTML}
+//           </div>
+//       </div>
+//   `;
+// }
+// // Define the redirectToSubmit function
+// function redirectToSubmit() {
+//   // Redirect the user to the submit page
+//   window.location.href = "../Submit Request/submit_request.html"; // Adjust the path accordingly
+// }
 
 
 

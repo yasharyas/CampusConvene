@@ -100,14 +100,14 @@
           return parameters;
       }
      
-      
+    
       // Usage example
       var queryParams = getQueryParameters();
       var venue = queryParams["venue"];
       var type = queryParams["type"];
       var capacity = queryParams["capacity"];
       var image = queryParams["image"];
-
+      console.log(venue);
       var venueElement = document.getElementById("venueHeading");
       venueElement.textContent=venue;
       var capacityElement = document.getElementById("MaxCapacity");
