@@ -172,18 +172,19 @@ var roomsPerPage = 3; // Number of rooms to display per page
 let currentPage = 1; // Current page number
 
 // Function to generate HTML for each room
+
 function generateRoomHTML(room) {
   var availabilityBtnClass = room.Availability ? "redbtn" : "greybtn";
   var availabilityBtnText = room.Availability ? "Available" : "Not Available";
-  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit()">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;">Booked</button>';
-
+  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit('${room.Venue}', '${room.Type}', '${room.Capacity}')">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;">Booked</button>';
+  
   return `
       <div class="room-container">
           <img src="../${room.Image}.jpg" style="height: 100%; width:30%; padding: 10px;" alt="Room Image" class="room-image">
           <div class="room-details">
               <h2>${room.Venue}</h2>
               <p>Type: ${room.Type}</p>
-              <p>Capacity: ${room.Capacity}</p>
+              <p id="11aa">Capacity: ${room.Capacity}</p>
               <button class="${availabilityBtnClass}" style="width: 30%; margin: 10px; margin-left: 0%;">${availabilityBtnText}</button>
               ${bookNowBtnHTML}
           </div>
@@ -192,9 +193,16 @@ function generateRoomHTML(room) {
 }
 
 // Function to redirect to submit_request.html
-function redirectToSubmit() {
-  window.location.href = "../Submit Request/submit_request.html";
+// Function to redirect to submit_request.html with query parameters
+function redirectToSubmit(venue, type, capacity) {
+  // Construct the URL with query parameters
+  var url = `../Submit Request/submit_request.html?venue=${encodeURIComponent(venue)}&type=${encodeURIComponent(type)}&capacity=${encodeURIComponent(capacity)}`;
+    
+  // Redirect to the constructed URL
+  window.location.href = url;
 }
+
+
 
 // Function to display rooms for the current page
 function displayRooms(rooms) {
@@ -208,7 +216,7 @@ function displayRooms(rooms) {
   roomsToShow.forEach(room => {
       var roomHTML = generateRoomHTML(room);
       roomContainer.innerHTML += roomHTML;
-  });
+  })
 }
 
 // Function to generate dynamic page numbers
