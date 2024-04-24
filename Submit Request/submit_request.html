@@ -68,7 +68,7 @@
 
     <div class="container">
       <div class="left-main">
-        <div class="highlight-img">
+        <div id="imageUrl">
       </div>
 
         <div class="desc">
@@ -106,6 +106,8 @@
       var venue = queryParams["venue"];
       var type = queryParams["type"];
       var capacity = queryParams["capacity"];
+      var image = queryParams["image"];
+
       var venueElement = document.getElementById("venueHeading");
       venueElement.textContent=venue;
       var capacityElement = document.getElementById("MaxCapacity");
@@ -115,8 +117,12 @@
       // Now you can use the values of venue, type, and capacity as needed
       var headingElement = document.getElementById("headingElementHall");
       headingElement.textContent = venue+" "+type;
-     
-
+      var imageElement = document.getElementById("imageUrl");
+      imageElement.style.backgroundImage = `url("../${image}.jpg")`;
+      imageElement.style.marginLeft = "40px";
+      imageElement.style.height = "50vh";
+      imageElement.style.backgroundSize = "cover";
+      imageElement.style.backgroundPosition = "center";
       </script>
 
 

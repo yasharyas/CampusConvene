@@ -206,7 +206,7 @@ let currentPage = 1; // Current page number
 function generateRoomHTML(room) {
   var availabilityBtnClass = room.Availability ? "redbtn" : "greybtn";
   var availabilityBtnText = room.Availability ? "Available" : "Not Available";
-  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit('${room.Venue}', '${room.Type}', '${room.Capacity}')">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;">Booked</button>';
+  var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit('${room.Venue}', '${room.Type}', '${room.Capacity}', '${room.Image}')">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;">Booked</button>';
   
   return `
       <div class="room-container">
@@ -224,13 +224,17 @@ function generateRoomHTML(room) {
 
 // Function to redirect to submit_request.html
 // Function to redirect to submit_request.html with query parameters
-function redirectToSubmit(venue, type, capacity) {
+function redirectToSubmit(venue, type, capacity, image) {
+  // Convert the image to a string representation (assuming image is a URL)
+  var imageString = encodeURIComponent(image); // Encode the image URL
+
   // Construct the URL with query parameters
-  var url = `../Submit Request/submit_request.html?venue=${encodeURIComponent(venue)}&type=${encodeURIComponent(type)}&capacity=${encodeURIComponent(capacity)}`;
-    
+  var url = `../Submit Request/submit_request.html?venue=${encodeURIComponent(venue)}&type=${encodeURIComponent(type)}&capacity=${encodeURIComponent(capacity)}&image=${imageString}`;
+
   // Redirect to the constructed URL
   window.location.href = url;
 }
+
 
 
 
