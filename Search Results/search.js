@@ -259,7 +259,7 @@ function generateRoomHTML(room) {
   var availabilityBtnText = room.Availability ? "Available" : "Not Available";
   var bookNowBtnHTML = room.Availability ? `<button class="redbtn book-now-btn" style="width: 20%;" onclick="redirectToSubmit()">Book Now</button>` : '<button class="greybtn book-now-btn" style="width: 20%;" disabled>Booked</button>';
   
-  var redirectOnClick = room.Availability ? 'window.location.href = "../SubmitRequest/submit_request.html";' : '';
+  var redirectOnClick = room.Availability ? 'window.location.href = "../Submit Request/submit_request.html";' : '';
 
   return `
       <div class="room-container">
@@ -277,7 +277,7 @@ function generateRoomHTML(room) {
 // Define the redirectToSubmit function
 function redirectToSubmit() {
   // Redirect the user to the submit page
-  window.location.href = "../SubmitRequest/submit_request.html"; // Adjust the path accordingly
+  window.location.href = "../Submit Request/submit_request.html"; // Adjust the path accordingly
 }
 
 
