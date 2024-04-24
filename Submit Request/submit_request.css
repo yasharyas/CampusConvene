@@ -141,11 +141,13 @@ ul {
 
 .highlight-img{
   
+ 
   margin-left:40px;
   height: 50vh;
   background-image: url("../images/Homepage lecture hall.avif");
   background-size:cover;
   background-position:center;
+
 }
 
 .container {
