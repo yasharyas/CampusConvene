@@ -51,173 +51,210 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
     <!-- Main Content -->
 
     <ol class="breadcrumb-list">
-      <li class="breadcrumb-item"><a href="../Homepage/homepage.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="../Search Results/search.html">Available rooms</a></li>
-      <li class="breadcrumb-item active" id="headingElementHall">A Block Lecture HAll</li>
+      <li class="breadcrumb-item">
+        <a href="../Homepage/homepage.html">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="../Search Results/search.html">Available rooms</a>
+      </li>
+      <li class="breadcrumb-item active" id="headingElementHall">
+        A Block Lecture HAll
+      </li>
     </ol>
 
     <div class="container">
       <div class="left-main">
-        <div id="imageUrl">
-      </div>
+        <div id="imageUrl"></div>
 
         <div class="desc">
-         
           <ul class="room-desc">
-            <li><h1 class="name" id = "venueHeading">venue</h1></li>
+            <li><h1 class="name" id="venueHeading">venue</h1></li>
             <li><p class="description" id="typeElement">Lecture Hall</p></li>
           </ul>
           <ul class="room-desc2">
-            <li><p class="description" id="MaxCapacity">Maximum-Capacity: capacity</p></li>
+            <li>
+              <p class="description" id="MaxCapacity">
+                Maximum-Capacity: capacity
+              </p>
+            </li>
           </ul>
-
-        
         </div>
       </div>
       <script>
         // Function to parse query parameters from URL
-      function getQueryParameters() {
+        function getQueryParameters() {
           var queryString = window.location.search;
           var parameters = {};
           if (queryString) {
-              queryString = queryString.substring(1); // Remove leading '?'
-              var pairs = queryString.split("&");
-              for (var i = 0; i < pairs.length; i++) {
-                  var pair = pairs[i].split("=");
-                  parameters[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-              }
+            queryString = queryString.substring(1); // Remove leading '?'
+            var pairs = queryString.split("&");
+            for (var i = 0; i < pairs.length; i++) {
+              var pair = pairs[i].split("=");
+              parameters[decodeURIComponent(pair[0])] = decodeURIComponent(
+                pair[1]
+              );
+            }
           }
           return parameters;
-      }
-     
-    
-      // Usage example
-      var queryParams = getQueryParameters();
-      var venue = queryParams["venue"];
-      var type = queryParams["type"];
-      var capacity = queryParams["capacity"];
-      var image = queryParams["image"];
-      console.log(venue);
-      var venueElement = document.getElementById("venueHeading");
-      venueElement.textContent=venue;
-      var capacityElement = document.getElementById("MaxCapacity");
-      capacityElement.textContent = "Maximum Capacity "+capacity;
-      var typeElement = document.getElementById("typeElement");
-      typeElement.textContent = type;
-      // Now you can use the values of venue, type, and capacity as needed
-      var headingElement = document.getElementById("headingElementHall");
-      headingElement.textContent = venue+" "+type;
-      var imageElement = document.getElementById("imageUrl");
-      imageElement.style.backgroundImage = `url("../${image}.jpg")`;
-      imageElement.style.marginLeft = "40px";
-      imageElement.style.height = "50vh";
-      imageElement.style.backgroundSize = "cover";
-      imageElement.style.backgroundPosition = "center";
-      </script>
+        }
 
+        // Usage example
+        var queryParams = getQueryParameters();
+        var venue = queryParams["venue"];
+        var type = queryParams["type"];
+        var capacity = queryParams["capacity"];
+        var image = queryParams["image"];
+        console.log(venue);
+        var venueElement = document.getElementById("venueHeading");
+        venueElement.textContent = venue;
+        var capacityElement = document.getElementById("MaxCapacity");
+        capacityElement.textContent = "Maximum Capacity " + capacity;
+        var typeElement = document.getElementById("typeElement");
+        typeElement.textContent = type;
+        // Now you can use the values of venue, type, and capacity as needed
+        var headingElement = document.getElementById("headingElementHall");
+        headingElement.textContent = venue + " " + type;
+        var imageElement = document.getElementById("imageUrl");
+        imageElement.style.backgroundImage = `url("../${image}.jpg")`;
+        imageElement.style.marginLeft = "40px";
+        imageElement.style.height = "50vh";
+        imageElement.style.backgroundSize = "cover";
+        imageElement.style.backgroundPosition = "center";
+      </script>
 
       <div class="right-main">
         <form id="myForm">
-            <label style="font-size: large;">Reason for booking the room:</label>
-            <div class="radio-container">
-                <input type="radio" id="event" name="bookingReason" class="radio-input" value="event">
-                <label for="event" class="radio-label">Event</label>
-            </div>
-            <div class="radio-container">
-                <input type="radio" id="meeting" name="bookingReason" class="radio-input" value="meeting">
-                <label for="meeting" class="radio-label">Team Meeting</label>
-            </div>
-            
-            <label style="font-size: large; margin-top: 10px;">Amenities needed:</label>
-            <div class="checkbox-container">
-                <input type="checkbox" id="projector" name="amenities" class="checkbox-input" value="projector">
-                <label for="projector" class="checkbox-label">Projector</label>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" id="mic" name="amenities" class="checkbox-input" value="mic">
-                <label for="mic" class="checkbox-label">Microphone</label>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" id="speaker" name="amenities" class="checkbox-input" value="speaker">
-                <label for="speaker" class="checkbox-label">Speaker</label>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" id="others" name="amenities" class="checkbox-input" value="others">
-                <label for="others" class="checkbox-label">Others</label>
-            </div>
-            
-            <div class="text-input-container">
-                <label for="otherAmenity">If others, please specify:</label>
-                <input type="text" id="otherAmenity" name="otherAmenity">
-            </div>
-            
-            <label style="font-size: large; margin-top: 10px;">Additional notes:</label>
-            <textarea id="inputText" name="additionalNotes" placeholder="Type something..."></textarea>
-            <input type="submit" value="Submit" onclick="bookRoom()">
+          <label style="font-size: large">Reason for booking the room:</label>
+          <div class="radio-container">
+            <input
+              type="radio"
+              id="event"
+              name="bookingReason"
+              class="radio-input"
+              value="event"
+            />
+            <label for="event" class="radio-label">Event</label>
+          </div>
+          <div class="radio-container">
+            <input
+              type="radio"
+              id="meeting"
+              name="bookingReason"
+              class="radio-input"
+              value="meeting"
+            />
+            <label for="meeting" class="radio-label">Team Meeting</label>
+          </div>
+
+          <label style="font-size: large; margin-top: 10px"
+            >Amenities needed:</label
+          >
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="projector"
+              name="amenities"
+              class="checkbox-input"
+              value="projector"
+            />
+            <label for="projector" class="checkbox-label">Projector</label>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="mic"
+              name="amenities"
+              class="checkbox-input"
+              value="mic"
+            />
+            <label for="mic" class="checkbox-label">Microphone</label>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="speaker"
+              name="amenities"
+              class="checkbox-input"
+              value="speaker"
+            />
+            <label for="speaker" class="checkbox-label">Speaker</label>
+          </div>
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="others"
+              name="amenities"
+              class="checkbox-input"
+              value="others"
+            />
+            <label for="others" class="checkbox-label">Others</label>
+          </div>
+
+          <div class="text-input-container">
+            <label for="otherAmenity">If others, please specify:</label>
+            <input type="text" id="otherAmenity" name="otherAmenity" />
+          </div>
+
+          <label style="font-size: large; margin-top: 10px"
+            >Additional notes:</label
+          >
+          <textarea
+            id="inputText"
+            name="additionalNotes"
+            placeholder="Type something..."
+          ></textarea>
+          <input type="submit" value="Submit" onclick="bookRoom()" />
         </form>
-    </div>
-    
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event) {
+      </div>
+
+      <script>
+        document
+          .getElementById("myForm")
+          .addEventListener("submit", function (event) {
             event.preventDefault(); // Prevent the form from submitting and refreshing the page
-    
+
             var inputText = document.getElementById("inputText").value;
-            var bookingReason = document.querySelector('input[name="bookingReason"]:checked').value;
+            var bookingReason = document.querySelector(
+              'input[name="bookingReason"]:checked'
+            ).value;
             var amenities = [];
-            var checkboxes = document.querySelectorAll('input[name="amenities"]:checked');
-            checkboxes.forEach(function(checkbox) {
-                amenities.push(checkbox.value);
+            var checkboxes = document.querySelectorAll(
+              'input[name="amenities"]:checked'
+            );
+            checkboxes.forEach(function (checkbox) {
+              amenities.push(checkbox.value);
             });
-            
+
             var otherAmenity = "";
             if (document.getElementById("others").checked) {
-                otherAmenity = document.getElementById("otherAmenity").value;
+              otherAmenity = document.getElementById("otherAmenity").value;
             }
-            
+
             console.log("Reason for booking: " + bookingReason);
-            console.log("Amenities needed: " + amenities.join(', '));
+            console.log("Amenities needed: " + amenities.join(", "));
             console.log("Other amenity: " + otherAmenity);
             console.log("Additional notes: " + inputText);
-            
+
             // You can further process the inputText, bookingReason, amenities, and otherAmenity as needed
-        });
-        
-        document.getElementById("others").addEventListener("change", function() {
-            var textInputContainer = document.querySelector('.text-input-container');
+          });
+
+        document
+          .getElementById("others")
+          .addEventListener("change", function () {
+            var textInputContainer = document.querySelector(
+              ".text-input-container"
+            );
             if (this.checked) {
-                textInputContainer.style.display = "block";
+              textInputContainer.style.display = "block";
             } else {
-                textInputContainer.style.display = "none";
+              textInputContainer.style.display = "none";
             }
-        });
-    </script>
-      
-
+          });
+      </script>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Footer -->
 

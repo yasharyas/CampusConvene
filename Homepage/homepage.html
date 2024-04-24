@@ -1,38 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-  <link rel="stylesheet" href="homepage.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-N7/lp5S5w/PVfG71S5a6Y9MGZ3P1KY0QuSbPd76h50tVlZbxRJ6VCYQ+n6lSLn1ZCZOkQwifm5+gtD2i0F3C7w==" crossorigin="anonymous" />
-  <title>CampusConvene</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-N7/lp5S5w/PVfG71S5a6Y9MGZ3P1KY0QuSbPd76h50tVlZbxRJ6VCYQ+n6lSLn1ZCZOkQwifm5+gtD2i0F3C7w=="
+      crossorigin="anonymous"
+    />
+    <title>CampusConvene</title>
 
-  <!-- Include Required Prerequisites -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
- 
-  <!-- Include Date Range Picker -->
-  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
-</head>
-<body>
+    <!-- Include Required Prerequisites -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css"
+    />
+
+    <!-- Include Date Range Picker -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css"
+    />
+  </head>
+  <body>
     <div class="header">
-        <div class="left">
-        <div><img src="../images/CampusConvene Logo.png" class="Logo" alt="Logo"></div>
+      <div class="left">
+        <div>
+          <img src="../images/CampusConvene Logo.png" class="Logo" alt="Logo" />
         </div>
-        <div class="right">
-          <ul>
-            <li><a href="..\Search Results\search.html"><button type="button" class="search-btn">Search </button></a></li>
-            <li>
-              <div class="dropdown">
-                <button onclick="myFunction()" type="button" class="user-info">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/>
-                  </svg>
-                </button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="../landing.html">Logout</a>
-                  <!-- <button onclick="redirectToAnotherPage()">Logout</button>
+      </div>
+      <div class="right">
+        <ul>
+          <li>
+            <a href="..\Search Results\search.html"
+              ><button type="button" class="search-btn">Search</button></a
+            >
+          </li>
+          <li>
+            <div class="dropdown">
+              <button onclick="myFunction()" type="button" class="user-info">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-user-round"
+                >
+                  <circle cx="12" cy="8" r="5" />
+                  <path d="M20 21a8 8 0 0 0-16 0" />
+                </svg>
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="../landing.html">Logout</a>
+                <!-- <button onclick="redirectToAnotherPage()">Logout</button>
 
                   <script>
                       function redirectToAnotherPage() {
@@ -49,192 +90,309 @@
 
                       }
                   </script> -->
-                </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="major"> 
-    <div class="homeMaincontent"> 
-        <p> CampusConvene: Meeting Rooms Made Easy</p>
+    <div class="major">
+      <div class="homeMaincontent">
+        <p>CampusConvene: Meeting Rooms Made Easy</p>
         <i>148 rooms available for booking now!</i>
-    </div>
-    <div class="homeMain">
-        <img src="..\images\home-main.jpg" alt="members of student body cheering" class="home-main-img">
-    </div>
+      </div>
+      <div class="homeMain">
+        <img
+          src="..\images\home-main.jpg"
+          alt="members of student body cheering"
+          class="home-main-img"
+        />
+      </div>
     </div>
     <div class="cardcont">
       <div class="card">
         <div class="first">
           <div class="prim">Search Location</div>
-          <div class="sec"><input type="text" placeholder = "Room" style="border: 0cap;"></div>
+          <div class="sec">
+            <input type="text" placeholder="Room" style="border: 0cap" />
+          </div>
         </div>
         <div class="border"></div>
         <div class="secondary">
-          <div class="prim" >Pick Date</div>
+          <div class="prim">Pick Date</div>
           <label class="sec">
-          <input type="text" name="daterange" value="" style="border: none;"/></label>
- 
+            <input type="text" name="daterange" value="" style="border: none"
+          /></label>
+
           <script type="text/javascript">
-          $(function() {
+            $(function () {
               $('input[name="daterange"]').daterangepicker({
-                  timePicker: true,
-                  timePickerIncrement: 30
+                timePicker: true,
+                timePickerIncrement: 30,
               });
-          });
+            });
           </script>
         </div>
-        <div class="border">
-          
-        </div>
+        <div class="border"></div>
         <div class="fourth">
           <div class="prim">Capacity</div>
-          <div class="sec"><input type="number" placeholder = "Enter Capacity" style="border: 0cap;"></div>
+          <div class="sec">
+            <input
+              type="number"
+              placeholder="Enter Capacity"
+              style="border: 0cap"
+            />
+          </div>
         </div>
-        <div class="button icon" style="margin-top: 5px; margin-right: 10px;"><a href="..\Search Results\search.html">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56" width="56" height="56" fill="none">
-          <g opacity="100%">
-            <rect filter="url(#filter_dshadow_0_0_0_00000014)" x="0" y="0" width="56" height="56" fill="#ff110c" rx="24"></rect>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="26" height="26" fill="#fff" x="15" y="15">
-            <path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
-            </path>
-          </svg>
-        </g>
-        <defs>
-          <filter id="filter_dshadow_0_0_0_00000014" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
-            <feFlood flood-opacity="0" result="bg-fix"></feFlood>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="alpha"></feColorMatrix>
-            <feOffset dx="0" dy="0"></feOffset>
-            <feGaussianBlur stdDeviation="0"></feGaussianBlur>
-            <feComposite in2="alpha" operator="out"></feComposite>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"></feColorMatrix>
-            <feBlend mode="normal" in2="bg-fix" result="bg-fix-filter_dshadow_0_0_0_00000014"></feBlend>
-            <feBlend in="SourceGraphic" in2="bg-fix-filter_dshadow_0_0_0_00000014" result="shape"></feBlend>
-          </filter>
-        </defs>
-      </svg></a>
-    </div>
+        <div class="button icon" style="margin-top: 5px; margin-right: 10px">
+          <a href="..\Search Results\search.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 56 56"
+              width="56"
+              height="56"
+              fill="none"
+            >
+              <g opacity="100%">
+                <rect
+                  filter="url(#filter_dshadow_0_0_0_00000014)"
+                  x="0"
+                  y="0"
+                  width="56"
+                  height="56"
+                  fill="#ff110c"
+                  rx="24"
+                ></rect>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="26"
+                  height="26"
+                  fill="#fff"
+                  x="15"
+                  y="15"
+                >
+                  <path
+                    d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
+                  ></path>
+                </svg>
+              </g>
+              <defs>
+                <filter
+                  id="filter_dshadow_0_0_0_00000014"
+                  color-interpolation-filters="sRGB"
+                  filterUnits="userSpaceOnUse"
+                >
+                  <feFlood flood-opacity="0" result="bg-fix"></feFlood>
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="alpha"
+                  ></feColorMatrix>
+                  <feOffset dx="0" dy="0"></feOffset>
+                  <feGaussianBlur stdDeviation="0"></feGaussianBlur>
+                  <feComposite in2="alpha" operator="out"></feComposite>
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"
+                  ></feColorMatrix>
+                  <feBlend
+                    mode="normal"
+                    in2="bg-fix"
+                    result="bg-fix-filter_dshadow_0_0_0_00000014"
+                  ></feBlend>
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="bg-fix-filter_dshadow_0_0_0_00000014"
+                    result="shape"
+                  ></feBlend>
+                </filter>
+              </defs></svg
+          ></a>
+        </div>
       </div>
     </div>
-
 
     <!-- Available Rooms Section -->
 
-    <p class="para">Available Rooms for Booking</p><br>
+    <p class="para">Available Rooms for Booking</p>
+    <br />
     <div class="available_rooms">
       <table class="types-of-rooms" class="table">
-      <tr class="table-row">
-        <div class="column1">
-          <div class="meeting-room">
-            <img src="..\images\Homepage meeting room.avif" alt="Meeting Room" class="meeting-room-img">
-            <div class="mr-text">Meeting Room</div>
+        <tr class="table-row">
+          <div class="column1">
+            <div class="meeting-room">
+              <img
+                src="..\images\Homepage meeting room.avif"
+                alt="Meeting Room"
+                class="meeting-room-img"
+              />
+              <div class="mr-text">Meeting Room</div>
+            </div>
           </div>
-        </div>
-      </tr>
-      <tr>
-        <div class="column2">
-          <div class="lecture-hall">
-            <img src="..\images/Homepage lecture hall.avif" alt="Lecture Hall" class="lecture-hall-img">
-            <div class="lh-text">Lecture Hall</div>
+        </tr>
+        <tr>
+          <div class="column2">
+            <div class="lecture-hall">
+              <img
+                src="..\images/Homepage lecture hall.avif"
+                alt="Lecture Hall"
+                class="lecture-hall-img"
+              />
+              <div class="lh-text">Lecture Hall</div>
+            </div>
+            <div class="lab">
+              <img
+                src="..\images\Homepage lab.avif"
+                alt="Laboratory"
+                class="lab-img"
+              />
+              <div class="lab-text">Laboratory</div>
+            </div>
           </div>
-          <div class="lab">
-            <img src="..\images\Homepage lab.avif" alt="Laboratory" class="lab-img">
-            <div class="lab-text">Laboratory</div>
+        </tr>
+        <tr>
+          <div class="column3">
+            <div class="study-hall">
+              <img
+                src="..\images\Homepage study hall.avif"
+                alt="Study Hall"
+                class="study-hall-img"
+              />
+              <div class="sh-text">Study Hall</div>
+            </div>
           </div>
-        </div>
-      </tr>
-      <tr>
-        <div class="column3">
-          <div class="study-hall">
-            <img src="..\images\Homepage study hall.avif" alt="Study Hall" class="study-hall-img">
-            <div class="sh-text">Study Hall</div>
+        </tr>
+        <tr>
+          <div class="column4">
+            <div class="audi">
+              <img
+                src="..\images\Homepage auditorium.avif"
+                alt="Auditorium"
+                class="audi-img"
+              />
+              <div class="audi-text">Auditorium</div>
+            </div>
+            <div class="tut-room">
+              <img
+                src="..\images\Homepage tutorial room.avif"
+                alt="Tutorial Room"
+                class="tut-room-img"
+              />
+              <div class="tut-text">Tutorial Room</div>
+            </div>
           </div>
-        </div>
-      </tr>
-      <tr>
-        <div class="column4">
-          <div class="audi">
-            <img src="..\images\Homepage auditorium.avif" alt="Auditorium" class="audi-img">
-            <div class="audi-text">Auditorium</div>
-          </div>
-          <div class="tut-room">
-            <img src="..\images\Homepage tutorial room.avif" alt="Tutorial Room" class="tut-room-img">
-            <div class="tut-text">Tutorial Room</div>
-          </div>
-        </div>
-      </tr>
+        </tr>
       </table>
     </div>
 
-<div class="pop-picks">
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <p style="font-size: 20px;font-weight: 1000;position: relative;top: 50px;padding-left: 79px;">Top Picks for club Meetings</p>
-  <section class="hero-section">
-    
-    <div class="caard-grid">
-      <a class="caard" href="#">
-        <div class="caard__background" style="background-image: url(https://plus.unsplash.com/premium_photo-1664475719609-bdddaf0fdd68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVldGluZyUyMGluJTIwYSUyMG9mZmljZXxlbnwwfDF8MHx8fDA%3D)"></div>
-        <div class="caard__content">
-          <p class="caard__category">1BC-2MC-QBC </p>
-          <h3 class="caard__heading">TUTORIAL ROOM </h3>
+    <div class="pop-picks">
+      <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+        rel="stylesheet"
+      />
+      <p
+        style="
+          font-size: 20px;
+          font-weight: 1000;
+          position: relative;
+          top: 50px;
+          padding-left: 79px;
+        "
+      >
+        Top Picks for club Meetings
+      </p>
+      <section class="hero-section">
+        <div class="caard-grid">
+          <a class="caard" href="#">
+            <div
+              class="caard__background"
+              style="
+                background-image: url(https://plus.unsplash.com/premium_photo-1664475719609-bdddaf0fdd68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWVldGluZyUyMGluJTIwYSUyMG9mZmljZXxlbnwwfDF8MHx8fDA%3D);
+              "
+            ></div>
+            <div class="caard__content">
+              <p class="caard__category">1BC-2MC-QBC</p>
+              <h3 class="caard__heading">TUTORIAL ROOM</h3>
+            </div>
+          </a>
+          <a class="caard" href="#">
+            <div
+              class="caard__background"
+              style="
+                background-image: url(https://plus.unsplash.com/premium_photo-1663036326613-61f71789a1c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lZXRpbmclMjBpbiUyMGElMjBvZmZpY2V8ZW58MHwxfDB8fHww);
+              "
+            ></div>
+            <div class="caard__content">
+              <p class="caard__category">XLH-002</p>
+              <h3 class="caard__heading">CONFERENCE ROOM</h3>
+            </div>
+          </a>
+          <a class="caard" href="#">
+            <div
+              class="caard__background"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fG1lZXRpbmclMjBpbiUyMGElMjBvZmZpY2V8ZW58MHwxfDB8fHww);
+              "
+            ></div>
+            <div class="caard__content">
+              <p class="caard__category">GD-XY-90</p>
+              <h3 class="caard__heading">GROUP DISCUSSION ROOM</h3>
+            </div>
+          </a>
+          <a class="caard" href="#">
+            <div
+              class="caard__background"
+              style="
+                background-image: url(https://images.unsplash.com/photo-1518604100146-5d90d05f1b58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fG1lZXRpbmclMjBpbiUyMGElMjBvZmZpY2V8ZW58MHwxfDB8fHww);
+              "
+            ></div>
+            <div class="caard__content">
+              <p class="caard__category">ALH-002</p>
+              <h3 class="caard__heading">STUDY HALL</h3>
+            </div>
+          </a>
         </div>
-      </a>
-      <a class="caard" href="#">
-        <div class="caard__background" style="background-image: url(https://plus.unsplash.com/premium_photo-1663036326613-61f71789a1c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1lZXRpbmclMjBpbiUyMGElMjBvZmZpY2V8ZW58MHwxfDB8fHww)"></div>
-        <div class="caard__content">
-          <p class="caard__category">XLH-002</p>
-          <h3 class="caard__heading">CONFERENCE ROOM</h3>
-        </div>
-      </a>
-      <a class="caard" href="#">
-        <div class="caard__background" style="background-image: url(https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fG1lZXRpbmclMjBpbiUyMGElMjBvZmZpY2V8ZW58MHwxfDB8fHww)"></div>
-        <div class="caard__content">
-          <p class="caard__category">GD-XY-90</p>
-          <h3 class="caard__heading">GROUP DISCUSSION ROOM</h3>
-        </div>
-      </a>
-      <a class="caard" href="#">
-        <div class="caard__background" style="background-image: url(https://images.unsplash.com/photo-1518604100146-5d90d05f1b58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fG1lZXRpbmclMjBpbiUyMGElMjBvZmZpY2V8ZW58MHwxfDB8fHww)"></div>
-        <div class="caard__content">
-          <p class="caard__category">ALH-002</p>
-          <h3 class="caard__heading">STUDY HALL</h3>
-        </div>
-      </a>
-    <div>
-  </section>
-</div>
-
-
-<!-- /Footer -->
-
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-left">
-      <div class="footer-logo">
-        <a href="#">CampusConvene</a>
-      </div>
-      <div class="footer-text">
-        <p>Simplifying room bookings for clubs since 2024</p>
-      </div>
-      <div class="footer-copyright">
-        <p>CampusConvene &copy;<br><p>2024</p></p>
-      </div>
+      </section>
     </div>
-    <div class="footer-right">
-      <ul class="footer-list">
-        <li><a href="../About Us/About-us.html">Support</a></li><br>
-        <li><a href="../About Us/About-us.html">Help Center</a></li><br>
-        <li><a href="../About Us/About-us.html">Assistance</a></li><br>
-        <li><a href="../About Us/About-us.html">User Manual</a></li><br>
-        <li><a href="../About Us/About-us.html">Get in touch</a></li><br>
-      </ul>
-    </div>
-  </div>
-</footer>
 
+    <!-- /Footer -->
 
-<script src="homepage.js"></script>
-</body>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <a href="#">CampusConvene</a>
+          </div>
+          <div class="footer-text">
+            <p>Simplifying room bookings for clubs since 2024</p>
+          </div>
+          <div class="footer-copyright">
+            <p>
+              CampusConvene &copy;<br />
+              <p>2024</p>
+            </p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <ul class="footer-list">
+            <li><a href="../About Us/About-us.html">Support</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">Help Center</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">Assistance</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">User Manual</a></li>
+            <br />
+            <li><a href="../About Us/About-us.html">Get in touch</a></li>
+            <br />
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="homepage.js"></script>
+  </body>
 </html>
