@@ -63,7 +63,7 @@
     <ol class="breadcrumb-list">
       <li class="breadcrumb-item"><a href="../Homepage/homepage.html">Home</a></li>
       <li class="breadcrumb-item"><a href="../Search Results/search.html">Available rooms</a></li>
-      <li class="breadcrumb-item active">A Block Lecture HAll</li>
+      <li class="breadcrumb-item active" id="headingElementHall">A Block Lecture HAll</li>
     </ol>
 
     <div class="container">
@@ -72,19 +72,54 @@
       </div>
 
         <div class="desc">
-
+         
           <ul class="room-desc">
-            <li><h1 class="name">A Block</h1></li>
-            <li><p class="description">Lecture Hall</p></li>
+            <li><h1 class="name" id = "venueHeading">venue</h1></li>
+            <li><p class="description" id="typeElement">Lecture Hall</p></li>
           </ul>
           <ul class="room-desc2">
-            <li><p class="description">Maximum-Capacity: 235</p></li>
+            <li><p class="description" id="MaxCapacity">Maximum-Capacity: capacity</p></li>
           </ul>
 
         
         </div>
       </div>
+      <script>
+        // Function to parse query parameters from URL
+      function getQueryParameters() {
+          var queryString = window.location.search;
+          var parameters = {};
+          if (queryString) {
+              queryString = queryString.substring(1); // Remove leading '?'
+              var pairs = queryString.split("&");
+              for (var i = 0; i < pairs.length; i++) {
+                  var pair = pairs[i].split("=");
+                  parameters[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+              }
+          }
+          return parameters;
+      }
+     
       
+      // Usage example
+      var queryParams = getQueryParameters();
+      var venue = queryParams["venue"];
+      var type = queryParams["type"];
+      var capacity = queryParams["capacity"];
+      var venueElement = document.getElementById("venueHeading");
+      venueElement.textContent=venue;
+      var capacityElement = document.getElementById("MaxCapacity");
+      capacityElement.textContent = "Maximum Capacity "+capacity;
+      var typeElement = document.getElementById("typeElement");
+      typeElement.textContent = type;
+      // Now you can use the values of venue, type, and capacity as needed
+      var headingElement = document.getElementById("headingElementHall");
+      headingElement.textContent = venue+" "+type;
+     
+
+      </script>
+
+
       <div class="right-main">
         <form id="myForm">
             <label style="font-size: large;">Reason for booking the room:</label>
